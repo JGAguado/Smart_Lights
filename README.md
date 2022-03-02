@@ -6,7 +6,7 @@
 [![BuyMeCoffee][buymecoffee-shield]][buymecoffee]
 
 # Smart Lights X1
-The Smart Lights X is an ESP32 based board for controlling a dimmeable 12V led strip. 
+The Smart Lights X1 is an ESP32 based board for controlling a dimmeable 12V led strip. 
 
 Note that the Maker Edition is designed with 1206 size SMD components, so it can be assembled manually.
 
