@@ -24,7 +24,7 @@ Note that the Maker Edition is designed with 1206 size SMD components, so it can
 
 
 
-[releases-shield]: https://img.shields.io/github/release/JGAguado/Smart_Lights_X1.svg?style=for-the-badge
+[releases-shield]: https://img.shields.io/github/release/JGAguado/Smart_Lights.svg?style=for-the-badge
 [releases]: https://github.com/JGAguado/Smart_Lights/releases
 
 [license-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=for-the-badge
