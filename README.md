@@ -5,10 +5,8 @@
 [![Project Maintenance][maintenance-shield]][maintenance]
 [![BuyMeCoffee][buymecoffee-shield]][buymecoffee]
 
-# Smart Lights X1
-The Smart Lights X1 is an ESP32 based board for controlling a dimmeable 12V led strip. 
-
-Note that the Maker Edition is designed with 1206 size SMD components, so it can be assembled manually.
+# Smart Lights X4
+The Smart Lights X4 is an ESP32 based board for controlling up to 4 dimmeable 12V led strips, ready to input 230VAC or 12VDC.
 
 <p float="left">
    <img src="./Documentation/Images/Top.png" width="49%">
@@ -24,8 +22,8 @@ Note that the Maker Edition is designed with 1206 size SMD components, so it can
 
 
 
-[releases-shield]: https://img.shields.io/github/release/JGAguado/Smart_Lights_X1.svg?style=for-the-badge
-[releases]: https://github.com/JGAguado/Smart_Lights_X1/releases
+[releases-shield]: https://img.shields.io/github/release/JGAguado/Smart_Lights_X4.svg?style=for-the-badge
+[releases]: https://github.com/JGAguado/Smart_Lights_X4/releases
 
 [license-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=for-the-badge
 
