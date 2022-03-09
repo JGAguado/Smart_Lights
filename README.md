@@ -22,8 +22,8 @@ The Smart Lights X4 is an ESP32 based board for controlling up to 4 dimmeable 12
 
 
 
-[releases-shield]: https://img.shields.io/github/release/JGAguado/Smart_Lights_X4.svg?style=for-the-badge
-[releases]: https://github.com/JGAguado/Smart_Lights_X4/releases
+[releases-shield]: https://img.shields.io/github/release/JGAguado/Smart_Lights.svg?style=for-the-badge
+[releases]: https://github.com/JGAguado/Smart_Lights/releases
 
 [license-shield]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=for-the-badge
 
