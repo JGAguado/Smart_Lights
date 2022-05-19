@@ -1,6 +1,7 @@
 
 [![GitHub Release][releases-shield]][releases]
 [![License][license-shield]](LICENSE)
+[![BuyIt][buyit-shield]][tindie]
 
 [![Project Maintenance][maintenance-shield]][maintenance]
 [![BuyMeCoffee][buymecoffee-shield]][buymecoffee]
@@ -30,5 +31,8 @@ The Smart Lights X4 is an ESP32 based board for controlling up to 4 dimmeable 12
 [maintenance-shield]: https://img.shields.io/badge/maintainer-J.%20G.%20Aguado-blue.svg?style=for-the-badge
 [maintenance]: https://github.com/JGAguado
 
-[buymecoffee-shield]: https://img.shields.io/badge/buy%20me%20a%20coffee-support-yellow.svg?style=for-the-badge
+[buymecoffee-shield]: https://img.shields.io/badge/buy%20me%20a%20coffee-support-yellow.svg?style=for-the-badge&logo=buymeacoffee
 [buymecoffee]: https://www.buymeacoffee.com/J.G.Aguado
+
+[buyit-shield]: https://img.shields.io/badge/get%20it%20on-tindie-247d84.svg?style=for-the-badge
+[tindie]: https://www.tindie.com/products/themakerllama/smart-lights-x4/
