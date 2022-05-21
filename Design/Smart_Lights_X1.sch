@@ -11668,9 +11668,9 @@ DIN A4, landscape with location and doc. field</description>
 <attribute name="NAME" x="109.728" y="129.54" size="1.778" layer="95" font="vector" rot="R90"/>
 <attribute name="VALUE" x="113.792" y="124.46" size="1.778" layer="96" font="vector" rot="R90" align="top-left"/>
 </instance>
-<instance part="J1" gate="G$1" x="22.86" y="157.48" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="12.7" y="147.32" size="1.778" layer="96" font="vector" rot="MR180"/>
-<attribute name="NAME" x="12.7" y="157.48" size="1.778" layer="95" font="vector" rot="MR180"/>
+<instance part="J1" gate="G$1" x="22.86" y="147.32" smashed="yes">
+<attribute name="VALUE" x="12.7" y="157.48" size="1.778" layer="96" font="vector"/>
+<attribute name="NAME" x="12.7" y="147.32" size="1.778" layer="95" font="vector"/>
 </instance>
 <instance part="GND10" gate="1" x="30.48" y="116.84" smashed="yes">
 <attribute name="VALUE" x="27.94" y="114.3" size="1.778" layer="96"/>
@@ -11806,10 +11806,14 @@ DIN A4, landscape with location and doc. field</description>
 <pinref part="D1" gate="G$1" pin="A"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="PWR"/>
-<wire x1="25.4" y1="149.86" x2="30.48" y2="149.86" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="149.86" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="152.4" x2="30.48" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="GNDBREAK"/>
+<wire x1="30.48" y1="149.86" x2="30.48" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="152.4" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="GND"/>
+<wire x1="25.4" y1="149.86" x2="30.48" y2="149.86" width="0.1524" layer="91"/>
+<junction x="30.48" y="149.86"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -11975,15 +11979,10 @@ DIN A4, landscape with location and doc. field</description>
 <junction x="38.1" y="149.86"/>
 <wire x1="38.1" y1="154.94" x2="35.56" y2="154.94" width="0.1524" layer="91"/>
 <junction x="38.1" y="154.94"/>
-<pinref part="J1" gate="G$1" pin="GNDBREAK"/>
-<wire x1="25.4" y1="152.4" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="152.4" x2="30.48" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="GND"/>
-<wire x1="25.4" y1="154.94" x2="30.48" y2="154.94" width="0.1524" layer="91"/>
-<junction x="30.48" y="154.94"/>
+<wire x1="25.4" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY4" gate="G$1" pin="VCC"/>
 <wire x1="38.1" y1="160.02" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="PWR"/>
 </segment>
 </net>
 <net name="N$15" class="0">
