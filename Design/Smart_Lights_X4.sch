@@ -73,7 +73,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -362,7 +362,7 @@ Grid 5.08 mm&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="diode">
+<library name="diode" urn="urn:adsk.eagle:library:210">
 <description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
 Based on the following sources:
 &lt;ul&gt;
@@ -373,41 +373,21 @@ Based on the following sources:
 &lt;/ul&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="SMB">
-<description>&lt;B&gt;DIODE&lt;/B&gt;</description>
-<wire x1="-2.2606" y1="1.905" x2="2.2606" y2="1.905" width="0.1016" layer="21"/>
-<wire x1="-2.2606" y1="-1.905" x2="2.2606" y2="-1.905" width="0.1016" layer="21"/>
-<wire x1="-2.2606" y1="-1.905" x2="-2.2606" y2="1.905" width="0.1016" layer="51"/>
-<wire x1="2.2606" y1="-1.905" x2="2.2606" y2="1.905" width="0.1016" layer="51"/>
-<wire x1="0.193" y1="1" x2="-0.83" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.83" y1="0" x2="0.193" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.193" y1="-1" x2="0.193" y2="1" width="0.2032" layer="21"/>
-<smd name="C" x="-2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
-<smd name="A" x="2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
-<text x="-2.159" y="2.159" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.159" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-2.794" y1="-1.0922" x2="-2.2606" y2="1.0922" layer="51"/>
-<rectangle x1="2.2606" y1="-1.0922" x2="2.794" y2="1.0922" layer="51"/>
-<rectangle x1="-1.35" y1="-1.9" x2="-0.8" y2="1.9" layer="51"/>
+<package name="SOD123" urn="urn:adsk.eagle:footprint:43203/1" library_version="8">
+<description>&lt;b&gt;Diode&lt;/b&gt;</description>
+<wire x1="-1.1" y1="0.7" x2="1.1" y2="0.7" width="0.254" layer="51"/>
+<wire x1="1.1" y1="0.7" x2="1.1" y2="-0.7" width="0.254" layer="51"/>
+<wire x1="1.1" y1="-0.7" x2="-1.1" y2="-0.7" width="0.254" layer="51"/>
+<wire x1="-1.1" y1="-0.7" x2="-1.1" y2="0.7" width="0.254" layer="51"/>
+<smd name="C" x="-1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
+<smd name="A" x="1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
+<text x="-1.1" y="1" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.1" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.95" y1="-0.45" x2="-1.2" y2="0.4" layer="51"/>
+<rectangle x1="1.2" y1="-0.45" x2="1.95" y2="0.4" layer="51"/>
+<rectangle x1="-1.05" y1="-0.65" x2="-0.15" y2="0.7" layer="51"/>
 </package>
-<package name="SMC">
-<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
-<wire x1="-3.5606" y1="3.105" x2="3.5606" y2="3.105" width="0.1016" layer="21"/>
-<wire x1="-3.5606" y1="-3.105" x2="3.5606" y2="-3.105" width="0.1016" layer="21"/>
-<wire x1="-3.5606" y1="-3.105" x2="-3.5606" y2="3.105" width="0.1016" layer="51"/>
-<wire x1="3.5606" y1="-3.105" x2="3.5606" y2="3.105" width="0.1016" layer="51"/>
-<wire x1="0.543" y1="1" x2="-0.83" y2="0" width="0.2032" layer="21"/>
-<wire x1="-0.83" y1="0" x2="0.543" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.543" y1="-1" x2="0.543" y2="1" width="0.2032" layer="21"/>
-<smd name="C" x="-3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
-<smd name="A" x="3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
-<text x="-3.459" y="3.359" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.459" y="-4.629" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-4.094" y1="-1.0922" x2="-3.5606" y2="1.0922" layer="51"/>
-<rectangle x1="3.5606" y1="-1.0922" x2="4.094" y2="1.0922" layer="51"/>
-<rectangle x1="-2.1" y1="-3.1" x2="-0.85" y2="3.1" layer="21"/>
-</package>
-<package name="DO41-10">
+<package name="DO41-10" urn="urn:adsk.eagle:footprint:43094/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <wire x1="2.032" y1="-1.27" x2="-2.032" y2="-1.27" width="0.1524" layer="21"/>
@@ -431,7 +411,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <rectangle x1="2.032" y1="-0.381" x2="3.937" y2="0.381" layer="21"/>
 <rectangle x1="-3.937" y1="-0.381" x2="-2.032" y2="0.381" layer="21"/>
 </package>
-<package name="DO35-10">
+<package name="DO35-10" urn="urn:adsk.eagle:footprint:43092/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 2 mm, horizontal, grid 10.16 mm</description>
 <wire x1="5.08" y1="0" x2="4.191" y2="0" width="0.508" layer="51"/>
@@ -459,7 +439,7 @@ diameter 2 mm, horizontal, grid 10.16 mm</description>
 <rectangle x1="2.286" y1="-0.254" x2="4.191" y2="0.254" layer="21"/>
 <rectangle x1="-4.191" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
 </package>
-<package name="DO204-10">
+<package name="DO204-10" urn="urn:adsk.eagle:footprint:43129/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 4 mm, horizontal, grid 10 mm</description>
 <wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
@@ -498,7 +478,7 @@ diameter 4 mm, horizontal, grid 10 mm</description>
 <rectangle x1="3.048" y1="-0.4064" x2="3.6068" y2="0.4064" layer="21"/>
 <rectangle x1="-3.6068" y1="-0.4064" x2="-3.048" y2="0.4064" layer="21"/>
 </package>
-<package name="DO15-12">
+<package name="DO15-12" urn="urn:adsk.eagle:footprint:43132/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 3.5 mm, horizontal, grid 12.7 mm</description>
 <wire x1="-3.81" y1="-1.778" x2="3.81" y2="-1.778" width="0.1524" layer="21"/>
@@ -515,7 +495,7 @@ diameter 3.5 mm, horizontal, grid 12.7 mm</description>
 <rectangle x1="-5.207" y1="-0.381" x2="-3.81" y2="0.381" layer="21"/>
 <rectangle x1="3.81" y1="-0.381" x2="5.207" y2="0.381" layer="21"/>
 </package>
-<package name="SOD57-10">
+<package name="SOD57-10" urn="urn:adsk.eagle:footprint:43130/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 4 mm, vertical, grid 10.16 mm</description>
 <wire x1="5.08" y1="0" x2="3.81" y2="0" width="0.8128" layer="51"/>
@@ -543,7 +523,7 @@ diameter 4 mm, vertical, grid 10.16 mm</description>
 <rectangle x1="-3.8354" y1="-0.4064" x2="-2.286" y2="0.4064" layer="21"/>
 <rectangle x1="2.286" y1="-0.4064" x2="3.8354" y2="0.4064" layer="21"/>
 </package>
-<package name="DO201-15">
+<package name="DO201-15" urn="urn:adsk.eagle:footprint:43127/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 5.6 mm, horizontal, grid 15.24 mm</description>
 <wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
@@ -567,7 +547,7 @@ diameter 5.6 mm, horizontal, grid 15.24 mm</description>
 <rectangle x1="-5.969" y1="-0.635" x2="-5.08" y2="0.635" layer="21"/>
 <rectangle x1="5.08" y1="-0.635" x2="5.969" y2="0.635" layer="21"/>
 </package>
-<package name="DO07">
+<package name="DO07" urn="urn:adsk.eagle:footprint:43160/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <wire x1="5.08" y1="0" x2="4.191" y2="0" width="0.508" layer="51"/>
@@ -595,7 +575,7 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <rectangle x1="3.556" y1="-0.254" x2="4.191" y2="0.254" layer="21"/>
 <rectangle x1="-4.191" y1="-0.254" x2="-3.556" y2="0.254" layer="21"/>
 </package>
-<package name="P1-10">
+<package name="P1-10" urn="urn:adsk.eagle:footprint:43138/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 3 mm, horizontal, grid 10.16 mm</description>
 <wire x1="-3.175" y1="-1.524" x2="3.175" y2="-1.524" width="0.1524" layer="21"/>
@@ -612,7 +592,7 @@ diameter 3 mm, horizontal, grid 10.16 mm</description>
 <rectangle x1="-3.937" y1="-0.381" x2="-3.175" y2="0.381" layer="21"/>
 <rectangle x1="3.175" y1="-0.381" x2="3.937" y2="0.381" layer="21"/>
 </package>
-<package name="P2-15">
+<package name="P2-15" urn="urn:adsk.eagle:footprint:43106/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 5 mm, horizontal, grid 12.7 mm</description>
 <wire x1="-4.826" y1="-2.54" x2="-4.826" y2="2.54" width="0.1524" layer="21"/>
@@ -636,7 +616,7 @@ diameter 5 mm, horizontal, grid 12.7 mm</description>
 <rectangle x1="4.826" y1="-0.635" x2="5.969" y2="0.635" layer="21"/>
 <rectangle x1="-5.969" y1="-0.635" x2="-4.826" y2="0.635" layer="21"/>
 </package>
-<package name="DO34-7">
+<package name="DO34-7" urn="urn:adsk.eagle:footprint:43109/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <wire x1="-1.524" y1="-0.889" x2="1.524" y2="-0.889" width="0.1524" layer="21"/>
@@ -660,7 +640,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <rectangle x1="1.524" y1="-0.254" x2="2.921" y2="0.254" layer="21"/>
 <rectangle x1="-2.921" y1="-0.254" x2="-1.524" y2="0.254" layer="21"/>
 </package>
-<package name="SOT54H">
+<package name="SOT54H" urn="urn:adsk.eagle:footprint:43111/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 2-lead plastic, vertical</description>
 <wire x1="-1.651" y1="2.032" x2="1.651" y2="2.032" width="0.1524" layer="21" curve="280.388858"/>
@@ -674,7 +654,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="SOD523">
+<package name="SOD523" urn="urn:adsk.eagle:footprint:43179/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;</description>
 <wire x1="-0.59" y1="0.4" x2="0.59" y2="0.4" width="0.1016" layer="51"/>
 <wire x1="0.59" y1="0.4" x2="0.59" y2="-0.4" width="0.1016" layer="51"/>
@@ -688,7 +668,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <rectangle x1="0.54" y1="-0.17" x2="0.75" y2="0.17" layer="51"/>
 <rectangle x1="-0.59" y1="-0.4" x2="-0.3" y2="0.4" layer="51"/>
 </package>
-<package name="TO18D">
+<package name="TO18D" urn="urn:adsk.eagle:footprint:43190/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 2-lead metall, vertical</description>
 <wire x1="1.651" y1="-2.286" x2="2.286" y2="-2.921" width="0.1524" layer="21"/>
@@ -701,7 +681,7 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 <text x="3.175" y="0.762" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="3.175" y="-1.143" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="C1702-05">
+<package name="C1702-05" urn="urn:adsk.eagle:footprint:43191/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 3.5 mm, vertical, grid 5.08 mm</description>
 <wire x1="2.54" y1="0" x2="0.762" y2="0" width="1.0668" layer="51"/>
@@ -713,7 +693,7 @@ diameter 3.5 mm, vertical, grid 5.08 mm</description>
 <text x="-4.318" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.7366" y1="-0.5334" x2="0.635" y2="0.5334" layer="21"/>
 </package>
-<package name="C1702-15">
+<package name="C1702-15" urn="urn:adsk.eagle:footprint:43117/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 3.5 mm, horizontal, grid 15.24 mm</description>
 <wire x1="-4.572" y1="-1.778" x2="-4.572" y2="1.778" width="0.1524" layer="21"/>
@@ -730,7 +710,7 @@ diameter 3.5 mm, horizontal, grid 15.24 mm</description>
 <rectangle x1="4.572" y1="-0.5334" x2="5.9436" y2="0.5334" layer="21"/>
 <rectangle x1="-5.9436" y1="-0.5334" x2="-4.572" y2="0.5334" layer="21"/>
 </package>
-<package name="SGA-10">
+<package name="SGA-10" urn="urn:adsk.eagle:footprint:43154/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 4 mm, vertical, grid 10.16 mm</description>
 <wire x1="5.08" y1="0" x2="3.175" y2="0" width="0.8128" layer="51"/>
@@ -755,7 +735,7 @@ diameter 4 mm, vertical, grid 10.16 mm</description>
 <rectangle x1="2.032" y1="-0.4064" x2="3.8608" y2="0.4064" layer="21"/>
 <rectangle x1="-3.8608" y1="-0.4064" x2="-2.032" y2="0.4064" layer="21"/>
 </package>
-<package name="SOD64-10">
+<package name="SOD64-10" urn="urn:adsk.eagle:footprint:43140/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 4.8 mm, vertical, grid 10.16 mm</description>
 <wire x1="5.08" y1="0" x2="3.556" y2="0" width="1.3716" layer="51"/>
@@ -783,7 +763,7 @@ diameter 4.8 mm, vertical, grid 10.16 mm</description>
 <rectangle x1="2.54" y1="-0.6604" x2="3.3274" y2="0.6604" layer="21"/>
 <rectangle x1="-3.3274" y1="-0.6604" x2="-2.54" y2="0.6604" layer="21"/>
 </package>
-<package name="SOD61A">
+<package name="SOD61A" urn="urn:adsk.eagle:footprint:43141/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 3.5 mm, vertical, grid 10.16 mm</description>
 <wire x1="5.08" y1="0" x2="4.064" y2="0" width="0.6604" layer="51"/>
@@ -834,7 +814,7 @@ diameter 3.5 mm, vertical, grid 10.16 mm</description>
 <rectangle x1="2.54" y1="-0.381" x2="2.921" y2="0.381" layer="21"/>
 <rectangle x1="-2.921" y1="-0.381" x2="-2.54" y2="0.381" layer="21"/>
 </package>
-<package name="SOD61B">
+<package name="SOD61B" urn="urn:adsk.eagle:footprint:43142/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 3.5 mm, vertical, grid 15.24 mm</description>
 <wire x1="7.62" y1="0" x2="6.604" y2="0" width="0.6604" layer="51"/>
@@ -885,7 +865,7 @@ diameter 3.5 mm, vertical, grid 15.24 mm</description>
 <rectangle x1="4.826" y1="-0.3302" x2="6.5278" y2="0.3302" layer="21"/>
 <rectangle x1="-6.5278" y1="-0.3302" x2="-4.826" y2="0.3302" layer="21"/>
 </package>
-<package name="SOD61C">
+<package name="SOD61C" urn="urn:adsk.eagle:footprint:43143/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 3.5 mm, vertical, grid 17.78 mm</description>
 <wire x1="8.89" y1="0" x2="7.874" y2="0" width="0.6604" layer="51"/>
@@ -954,7 +934,7 @@ diameter 3.5 mm, vertical, grid 17.78 mm</description>
 <rectangle x1="5.969" y1="-0.3302" x2="7.8232" y2="0.3302" layer="21"/>
 <rectangle x1="-7.8232" y1="-0.3302" x2="-5.969" y2="0.3302" layer="21"/>
 </package>
-<package name="SOD61D">
+<package name="SOD61D" urn="urn:adsk.eagle:footprint:43144/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 3.5 mm, vertical, grid 15.24 mm</description>
 <wire x1="7.62" y1="0" x2="6.604" y2="0" width="0.6604" layer="51"/>
@@ -1005,7 +985,7 @@ diameter 3.5 mm, vertical, grid 15.24 mm</description>
 <rectangle x1="5.207" y1="-0.3302" x2="6.5278" y2="0.3302" layer="21"/>
 <rectangle x1="-6.5278" y1="-0.3302" x2="-5.207" y2="0.3302" layer="21"/>
 </package>
-<package name="SOD61E">
+<package name="SOD61E" urn="urn:adsk.eagle:footprint:43145/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 3.5 mm, vertical, grid 20.32 mm</description>
 <wire x1="10.16" y1="0" x2="9.144" y2="0" width="0.6604" layer="51"/>
@@ -1056,7 +1036,7 @@ diameter 3.5 mm, vertical, grid 20.32 mm</description>
 <rectangle x1="6.731" y1="-0.3302" x2="9.0678" y2="0.3302" layer="21"/>
 <rectangle x1="-9.0678" y1="-0.3302" x2="-6.731" y2="0.3302" layer="21"/>
 </package>
-<package name="DO27-15">
+<package name="DO27-15" urn="urn:adsk.eagle:footprint:43095/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 5 mm, horizontal, grid 15.24 mm</description>
 <wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
@@ -1080,7 +1060,7 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <rectangle x1="-5.969" y1="-0.635" x2="-5.08" y2="0.635" layer="21"/>
 <rectangle x1="5.08" y1="-0.635" x2="5.969" y2="0.635" layer="21"/>
 </package>
-<package name="SOD81">
+<package name="SOD81" urn="urn:adsk.eagle:footprint:43125/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 2.3 mm, vertical, grid 10.16 mm</description>
 <wire x1="-1.905" y1="1.143" x2="1.905" y2="1.143" width="0.1524" layer="21"/>
@@ -1138,7 +1118,7 @@ diameter 2.3 mm, vertical, grid 10.16 mm</description>
 <rectangle x1="-3.937" y1="-0.381" x2="-2.159" y2="0.381" layer="21"/>
 <rectangle x1="2.159" y1="-0.381" x2="3.937" y2="0.381" layer="21"/>
 </package>
-<package name="SOD84">
+<package name="SOD84" urn="urn:adsk.eagle:footprint:43139/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 3.3 mm, vertical, grid 10.16 mm</description>
 <wire x1="-1.905" y1="1.651" x2="1.905" y2="1.651" width="0.1524" layer="21"/>
@@ -1196,7 +1176,7 @@ diameter 3.3 mm, vertical, grid 10.16 mm</description>
 <rectangle x1="2.159" y1="-0.381" x2="3.937" y2="0.381" layer="21"/>
 <rectangle x1="-1.651" y1="-1.651" x2="-1.143" y2="1.651" layer="21"/>
 </package>
-<package name="F126-10">
+<package name="F126-10" urn="urn:adsk.eagle:footprint:43161/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 3 mm, horizontal, grid 10.16 mm</description>
 <wire x1="-3.175" y1="-1.524" x2="3.175" y2="-1.524" width="0.1524" layer="21"/>
@@ -1220,7 +1200,7 @@ diameter 3 mm, horizontal, grid 10.16 mm</description>
 <rectangle x1="3.175" y1="-0.4064" x2="3.7338" y2="0.4064" layer="21"/>
 <rectangle x1="-3.7338" y1="-0.4064" x2="-3.175" y2="0.4064" layer="21"/>
 </package>
-<package name="DO220S">
+<package name="DO220S" urn="urn:adsk.eagle:footprint:43133/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 2-lead molded, vertical</description>
 <wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.1524" layer="21"/>
@@ -1240,7 +1220,7 @@ diameter 3 mm, horizontal, grid 10.16 mm</description>
 <rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
 <rectangle x1="-1.651" y1="-1.27" x2="1.651" y2="-0.762" layer="21"/>
 </package>
-<package name="TO220AC">
+<package name="TO220AC" urn="urn:adsk.eagle:footprint:43128/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 2-lead molded, horizontal</description>
 <wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.1524" layer="21"/>
@@ -1275,7 +1255,7 @@ diameter 3 mm, horizontal, grid 10.16 mm</description>
 <rectangle x1="-2.921" y1="-6.35" x2="-2.159" y2="-4.445" layer="51"/>
 <hole x="0" y="11.176" drill="3.302"/>
 </package>
-<package name="TO220ACS">
+<package name="TO220ACS" urn="urn:adsk.eagle:footprint:43137/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 2-lead molded, vertical</description>
 <wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.1524" layer="21"/>
@@ -1295,7 +1275,7 @@ diameter 3 mm, horizontal, grid 10.16 mm</description>
 <rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
 <rectangle x1="-1.651" y1="-1.27" x2="1.651" y2="-0.762" layer="21"/>
 </package>
-<package name="G4-12">
+<package name="G4-12" urn="urn:adsk.eagle:footprint:43131/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 7.62 mm, horizontal, grid 12.7 mm</description>
 <wire x1="3.556" y1="1.27" x2="3.556" y2="-1.27" width="0.1524" layer="21" curve="-180"/>
@@ -1326,7 +1306,7 @@ diameter 7.62 mm, horizontal, grid 12.7 mm</description>
 <rectangle x1="3.81" y1="-0.635" x2="4.953" y2="0.635" layer="21"/>
 <rectangle x1="-4.953" y1="-0.635" x2="-3.81" y2="0.635" layer="21"/>
 </package>
-<package name="SOD83-12">
+<package name="SOD83-12" urn="urn:adsk.eagle:footprint:43146/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 4.8 mm, vertical, grid 12.7 mm</description>
 <wire x1="6.35" y1="0" x2="4.826" y2="0" width="1.3716" layer="51"/>
@@ -1354,7 +1334,24 @@ diameter 4.8 mm, vertical, grid 12.7 mm</description>
 <rectangle x1="3.81" y1="-0.6604" x2="4.6228" y2="0.6604" layer="21"/>
 <rectangle x1="-4.6228" y1="-0.6604" x2="-3.81" y2="0.6604" layer="21"/>
 </package>
-<package name="P6-15">
+<package name="SMB" urn="urn:adsk.eagle:footprint:43181/1" library_version="8">
+<description>&lt;B&gt;DIODE&lt;/B&gt;</description>
+<wire x1="-2.2606" y1="1.905" x2="2.2606" y2="1.905" width="0.1016" layer="21"/>
+<wire x1="-2.2606" y1="-1.905" x2="2.2606" y2="-1.905" width="0.1016" layer="21"/>
+<wire x1="-2.2606" y1="-1.905" x2="-2.2606" y2="1.905" width="0.1016" layer="51"/>
+<wire x1="2.2606" y1="-1.905" x2="2.2606" y2="1.905" width="0.1016" layer="51"/>
+<wire x1="0.193" y1="1" x2="-0.83" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.83" y1="0" x2="0.193" y2="-1" width="0.2032" layer="21"/>
+<wire x1="0.193" y1="-1" x2="0.193" y2="1" width="0.2032" layer="21"/>
+<smd name="C" x="-2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
+<smd name="A" x="2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
+<text x="-2.159" y="2.159" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.159" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-2.794" y1="-1.0922" x2="-2.2606" y2="1.0922" layer="51"/>
+<rectangle x1="2.2606" y1="-1.0922" x2="2.794" y2="1.0922" layer="51"/>
+<rectangle x1="-1.35" y1="-1.9" x2="-0.8" y2="1.9" layer="51"/>
+</package>
+<package name="P6-15" urn="urn:adsk.eagle:footprint:43097/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 9 mm, horizontal, grid 15.24 mm</description>
 <wire x1="-4.699" y1="-4.572" x2="-4.699" y2="4.572" width="0.1524" layer="21"/>
@@ -1378,7 +1375,7 @@ diameter 9 mm, horizontal, grid 15.24 mm</description>
 <rectangle x1="4.699" y1="-0.635" x2="5.969" y2="0.635" layer="21"/>
 <rectangle x1="-5.969" y1="-0.635" x2="-4.699" y2="0.635" layer="21"/>
 </package>
-<package name="C2673">
+<package name="C2673" urn="urn:adsk.eagle:footprint:43156/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <wire x1="4.826" y1="-2.667" x2="-4.826" y2="-2.667" width="0.1524" layer="21"/>
@@ -1402,7 +1399,7 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <rectangle x1="4.826" y1="-0.635" x2="5.969" y2="0.635" layer="21"/>
 <rectangle x1="-5.969" y1="-0.635" x2="-4.826" y2="0.635" layer="21"/>
 </package>
-<package name="C221B1A">
+<package name="C221B1A" urn="urn:adsk.eagle:footprint:43158/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
 2-lead molded, horizontal</description>
 <wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.1524" layer="21"/>
@@ -1434,7 +1431,7 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <rectangle x1="-2.921" y1="-6.35" x2="-2.159" y2="-4.445" layer="51"/>
 <hole x="0" y="11.176" drill="3.302"/>
 </package>
-<package name="SOD80C">
+<package name="SOD80C" urn="urn:adsk.eagle:footprint:43180/1" library_version="8">
 <description>&lt;B&gt;DIODE&lt;/B&gt;</description>
 <wire x1="1.3208" y1="0.7874" x2="-1.3208" y2="0.7874" width="0.1524" layer="51"/>
 <wire x1="1.3208" y1="-0.7874" x2="-1.3208" y2="-0.7874" width="0.1524" layer="51"/>
@@ -1449,7 +1446,7 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <rectangle x1="1.2954" y1="-0.8636" x2="1.8542" y2="0.8636" layer="51"/>
 <rectangle x1="-0.8636" y1="-0.7874" x2="-0.254" y2="0.7874" layer="21"/>
 </package>
-<package name="D-10">
+<package name="D-10" urn="urn:adsk.eagle:footprint:43192/1" library_version="8">
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
 <wire x1="3.175" y1="1.524" x2="-3.175" y2="1.524" width="0.1524" layer="21"/>
 <wire x1="-3.175" y1="-1.524" x2="3.175" y2="-1.524" width="0.1524" layer="21"/>
@@ -1465,7 +1462,7 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <text x="-3.175" y="-3.175" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-2.286" y1="-1.524" x2="-1.524" y2="1.524" layer="21"/>
 </package>
-<package name="D-12.5">
+<package name="D-12.5" urn="urn:adsk.eagle:footprint:43193/1" library_version="8">
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
 <wire x1="3.175" y1="1.524" x2="-3.175" y2="1.524" width="0.1524" layer="21"/>
 <wire x1="-3.175" y1="-1.524" x2="3.175" y2="-1.524" width="0.1524" layer="21"/>
@@ -1482,7 +1479,7 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <rectangle x1="-2.286" y1="-1.524" x2="-1.524" y2="1.524" layer="21"/>
 <rectangle x1="-2.286" y1="-1.524" x2="-1.524" y2="1.524" layer="21"/>
 </package>
-<package name="D-2.5">
+<package name="D-2.5" urn="urn:adsk.eagle:footprint:43194/1" library_version="8">
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
 <wire x1="0.508" y1="0.762" x2="-0.508" y2="0" width="0.1524" layer="21"/>
 <wire x1="-0.508" y1="0" x2="0.508" y2="-0.762" width="0.1524" layer="21"/>
@@ -1496,7 +1493,7 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <text x="-1.651" y="1.143" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-1.651" y="-2.413" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="D-5">
+<package name="D-5" urn="urn:adsk.eagle:footprint:43195/1" library_version="8">
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
 <wire x1="1.397" y1="0.889" x2="-1.397" y2="0.889" width="0.1524" layer="21"/>
 <wire x1="-1.397" y1="-0.889" x2="1.397" y2="-0.889" width="0.1524" layer="21"/>
@@ -1512,7 +1509,7 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <text x="-1.905" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.016" y1="-0.889" x2="-0.508" y2="0.889" layer="21"/>
 </package>
-<package name="D-7.5">
+<package name="D-7.5" urn="urn:adsk.eagle:footprint:43196/1" library_version="8">
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
 <wire x1="1.905" y1="0.889" x2="-1.905" y2="0.889" width="0.1524" layer="21"/>
 <wire x1="-1.905" y1="-0.889" x2="1.905" y2="-0.889" width="0.1524" layer="21"/>
@@ -1528,7 +1525,7 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <text x="-1.905" y="-2.54" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.27" y1="-0.889" x2="-0.762" y2="0.889" layer="21"/>
 </package>
-<package name="SOD106-R">
+<package name="SOD106-R" urn="urn:adsk.eagle:footprint:43197/1" library_version="8">
 <description>&lt;b&gt;SOD106 Reflow soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
 <wire x1="1.8208" y1="0.7874" x2="-1.8208" y2="0.7874" width="0.1524" layer="51"/>
 <wire x1="1.8208" y1="-0.7874" x2="-1.8208" y2="-0.7874" width="0.1524" layer="51"/>
@@ -1543,7 +1540,24 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <rectangle x1="1.7954" y1="-0.8636" x2="2.3542" y2="0.8636" layer="51"/>
 <rectangle x1="-1.3636" y1="-0.7874" x2="-0.754" y2="0.7874" layer="21"/>
 </package>
-<package name="SOD106-W">
+<package name="SMC" urn="urn:adsk.eagle:footprint:43198/1" library_version="8">
+<description>&lt;b&gt;DIODE&lt;/b&gt;</description>
+<wire x1="-3.5606" y1="3.105" x2="3.5606" y2="3.105" width="0.1016" layer="21"/>
+<wire x1="-3.5606" y1="-3.105" x2="3.5606" y2="-3.105" width="0.1016" layer="21"/>
+<wire x1="-3.5606" y1="-3.105" x2="-3.5606" y2="3.105" width="0.1016" layer="51"/>
+<wire x1="3.5606" y1="-3.105" x2="3.5606" y2="3.105" width="0.1016" layer="51"/>
+<wire x1="0.543" y1="1" x2="-0.83" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.83" y1="0" x2="0.543" y2="-1" width="0.2032" layer="21"/>
+<wire x1="0.543" y1="-1" x2="0.543" y2="1" width="0.2032" layer="21"/>
+<smd name="C" x="-3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
+<smd name="A" x="3.7" y="0" dx="2.8" dy="3.8" layer="1"/>
+<text x="-3.459" y="3.359" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.459" y="-4.629" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-4.094" y1="-1.0922" x2="-3.5606" y2="1.0922" layer="51"/>
+<rectangle x1="3.5606" y1="-1.0922" x2="4.094" y2="1.0922" layer="51"/>
+<rectangle x1="-2.1" y1="-3.1" x2="-0.85" y2="3.1" layer="21"/>
+</package>
+<package name="SOD106-W" urn="urn:adsk.eagle:footprint:43199/1" library_version="8">
 <description>&lt;b&gt;SOD106 Wave soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
 <wire x1="1.8208" y1="0.7874" x2="-1.8208" y2="0.7874" width="0.1524" layer="51"/>
 <wire x1="1.8208" y1="-0.7874" x2="-1.8208" y2="-0.7874" width="0.1524" layer="51"/>
@@ -1558,7 +1572,7 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <rectangle x1="1.7954" y1="-0.8636" x2="2.3542" y2="0.8636" layer="51"/>
 <rectangle x1="-1.3636" y1="-0.7874" x2="-0.754" y2="0.7874" layer="21"/>
 </package>
-<package name="SOD106A-R">
+<package name="SOD106A-R" urn="urn:adsk.eagle:footprint:43200/1" library_version="8">
 <description>&lt;b&gt;SOD106A Reflow soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
 <wire x1="1.8208" y1="0.7874" x2="-1.8208" y2="0.7874" width="0.1524" layer="51"/>
 <wire x1="1.8208" y1="-0.7874" x2="-1.8208" y2="-0.7874" width="0.1524" layer="51"/>
@@ -1573,7 +1587,7 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <rectangle x1="1.7954" y1="-0.8636" x2="2.3542" y2="0.8636" layer="51"/>
 <rectangle x1="-1.3636" y1="-0.7874" x2="-0.754" y2="0.7874" layer="51"/>
 </package>
-<package name="SOD110-W">
+<package name="SOD110-W" urn="urn:adsk.eagle:footprint:43201/1" library_version="8">
 <description>&lt;b&gt;SOD110 Wave soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
 <wire x1="-1" y1="0.5" x2="1.05" y2="0.5" width="0.1016" layer="51"/>
 <wire x1="1.05" y1="0.5" x2="1.05" y2="-0.5" width="0.1016" layer="51"/>
@@ -1585,7 +1599,7 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <text x="-1.524" y="-2.413" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.65" y1="-0.45" x2="-0.4" y2="0.45" layer="51"/>
 </package>
-<package name="SOD110-R">
+<package name="SOD110-R" urn="urn:adsk.eagle:footprint:43202/1" library_version="8">
 <description>&lt;b&gt;SOD110 Reflow soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
 <wire x1="-1" y1="0.5" x2="1.05" y2="0.5" width="0.1016" layer="51"/>
 <wire x1="1.05" y1="0.5" x2="1.05" y2="-0.5" width="0.1016" layer="51"/>
@@ -1597,51 +1611,37 @@ diameter 5.2 mm, horizontal, grid 15.24 mm</description>
 <text x="-1.524" y="-2.413" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.65" y1="-0.45" x2="-0.4" y2="0.45" layer="51"/>
 </package>
-<package name="SOD123">
-<description>&lt;b&gt;Diode&lt;/b&gt;</description>
-<wire x1="-1.1" y1="0.7" x2="1.1" y2="0.7" width="0.254" layer="51"/>
-<wire x1="1.1" y1="0.7" x2="1.1" y2="-0.7" width="0.254" layer="51"/>
-<wire x1="1.1" y1="-0.7" x2="-1.1" y2="-0.7" width="0.254" layer="51"/>
-<wire x1="-1.1" y1="-0.7" x2="-1.1" y2="0.7" width="0.254" layer="51"/>
-<smd name="C" x="-1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
-<smd name="A" x="1.9" y="0" dx="1.4" dy="1.4" layer="1"/>
-<text x="-1.1" y="1" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.1" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.95" y1="-0.45" x2="-1.2" y2="0.4" layer="51"/>
-<rectangle x1="1.2" y1="-0.45" x2="1.95" y2="0.4" layer="51"/>
-<rectangle x1="-1.05" y1="-0.65" x2="-0.15" y2="0.7" layer="51"/>
-</package>
-<package name="SOD323-R">
+<package name="SOD323-R" urn="urn:adsk.eagle:footprint:43204/1" library_version="8">
 <description>&lt;b&gt;SOD323 Reflow soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
-<wire x1="-1" y1="0.7" x2="1" y2="0.7" width="0.1524" layer="51"/>
+<wire x1="-1" y1="0.7" x2="1" y2="0.7" width="0.1524" layer="21"/>
 <wire x1="1" y1="0.7" x2="1" y2="-0.7" width="0.1524" layer="51"/>
-<wire x1="1" y1="-0.7" x2="-1" y2="-0.7" width="0.1524" layer="51"/>
+<wire x1="1" y1="-0.7" x2="-1" y2="-0.7" width="0.1524" layer="21"/>
 <wire x1="-1" y1="-0.7" x2="-1" y2="0.7" width="0.1524" layer="51"/>
-<wire x1="-0.5" y1="0" x2="0.1" y2="0.4" width="0.1524" layer="51"/>
-<wire x1="0.1" y1="0.4" x2="0.1" y2="-0.4" width="0.1524" layer="51"/>
-<wire x1="0.1" y1="-0.4" x2="-0.5" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.5" y1="0" x2="0.1" y2="0.4" width="0.1524" layer="21"/>
+<wire x1="0.1" y1="0.4" x2="0.1" y2="-0.4" width="0.1524" layer="21"/>
+<wire x1="0.1" y1="-0.4" x2="-0.5" y2="0" width="0.1524" layer="21"/>
 <smd name="C" x="-1.1" y="0" dx="0.6" dy="0.6" layer="1"/>
 <smd name="A" x="1.1" y="0" dx="0.6" dy="0.6" layer="1"/>
 <text x="-1.1" y="1" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.1" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.7" y1="-0.7" x2="-0.5" y2="0.7" layer="51"/>
 </package>
-<package name="SOD323-W">
+<package name="SOD323-W" urn="urn:adsk.eagle:footprint:43205/1" library_version="8">
 <description>&lt;b&gt;SOD323 Wave soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
 <wire x1="-1" y1="0.7" x2="1" y2="0.7" width="0.1524" layer="51"/>
 <wire x1="1" y1="0.7" x2="1" y2="-0.7" width="0.1524" layer="51"/>
 <wire x1="1" y1="-0.7" x2="-1" y2="-0.7" width="0.1524" layer="51"/>
 <wire x1="-1" y1="-0.7" x2="-1" y2="0.7" width="0.1524" layer="51"/>
-<wire x1="-0.5" y1="0" x2="0.1" y2="0.4" width="0.1524" layer="51"/>
-<wire x1="0.1" y1="0.4" x2="0.1" y2="-0.4" width="0.1524" layer="51"/>
-<wire x1="0.1" y1="-0.4" x2="-0.5" y2="0" width="0.1524" layer="51"/>
+<wire x1="-0.5" y1="0" x2="0.1" y2="0.4" width="0.1524" layer="21"/>
+<wire x1="0.1" y1="0.4" x2="0.1" y2="-0.4" width="0.1524" layer="21"/>
+<wire x1="0.1" y1="-0.4" x2="-0.5" y2="0" width="0.1524" layer="21"/>
 <smd name="C" x="-1.45" y="0" dx="1.5" dy="1.2" layer="1"/>
 <smd name="A" x="1.45" y="0" dx="1.5" dy="1.2" layer="1"/>
 <text x="-1.1" y="1" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.1" y="-2.3" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.7" y1="-0.7" x2="-0.5" y2="0.7" layer="51"/>
 </package>
-<package name="GF1">
+<package name="GF1" urn="urn:adsk.eagle:footprint:43206/1" library_version="8">
 <description>&lt;b&gt;GF1&lt;/b&gt;&lt;p&gt;
 General Semiconductor</description>
 <wire x1="-2.24" y1="1.32" x2="2.24" y2="1.32" width="0.254" layer="21"/>
@@ -1657,7 +1657,7 @@ General Semiconductor</description>
 <rectangle x1="-1.9" y1="-1.05" x2="-1.25" y2="1.05" layer="51"/>
 <rectangle x1="-1.4" y1="-1.05" x2="-1.25" y2="1.05" layer="21"/>
 </package>
-<package name="MINIMELF">
+<package name="MINIMELF" urn="urn:adsk.eagle:footprint:43207/1" library_version="8">
 <description>&lt;b&gt;Mini Melf Diode&lt;/b&gt;</description>
 <wire x1="1.3208" y1="0.7874" x2="-1.3208" y2="0.7874" width="0.1524" layer="51"/>
 <wire x1="1.3208" y1="-0.7874" x2="-1.3208" y2="-0.7874" width="0.1524" layer="51"/>
@@ -1672,7 +1672,7 @@ General Semiconductor</description>
 <rectangle x1="1.2954" y1="-0.8636" x2="1.8542" y2="0.8636" layer="51"/>
 <rectangle x1="-0.8636" y1="-0.7874" x2="-0.254" y2="0.7874" layer="21"/>
 </package>
-<package name="MELF-MLL41">
+<package name="MELF-MLL41" urn="urn:adsk.eagle:footprint:43208/1" library_version="8">
 <description>&lt;b&gt;DIODE&lt;/b&gt;&lt;p&gt;
 Package DO-213AB = http://www.diotec.com/pdf/sm4001.pdf</description>
 <wire x1="2.0828" y1="1.1938" x2="-2.159" y2="1.1938" width="0.1524" layer="51"/>
@@ -1690,7 +1690,7 @@ Package DO-213AB = http://www.diotec.com/pdf/sm4001.pdf</description>
 <rectangle x1="-2.6162" y1="-1.27" x2="-2.1082" y2="1.27" layer="51"/>
 <rectangle x1="-1.4478" y1="-1.1938" x2="-0.5588" y2="1.1938" layer="51"/>
 </package>
-<package name="MICROMELF-R">
+<package name="MICROMELF-R" urn="urn:adsk.eagle:footprint:43209/1" library_version="8">
 <description>&lt;b&gt;Micro Melf Diode Reflow soldering&lt;/b&gt; VISHAY mcl4148.pdf</description>
 <wire x1="-0.65" y1="0.55" x2="0.65" y2="0.55" width="0.1524" layer="51"/>
 <wire x1="-0.65" y1="-0.55" x2="0.65" y2="-0.55" width="0.1524" layer="51"/>
@@ -1702,7 +1702,7 @@ Package DO-213AB = http://www.diotec.com/pdf/sm4001.pdf</description>
 <rectangle x1="0.65" y1="-0.65" x2="0.95" y2="0.65" layer="51"/>
 <rectangle x1="-0.5" y1="-0.55" x2="-0.2" y2="0.55" layer="51"/>
 </package>
-<package name="MICROMELF-W">
+<package name="MICROMELF-W" urn="urn:adsk.eagle:footprint:43210/1" library_version="8">
 <description>&lt;b&gt;Micro Melf Diode Wave soldering&lt;/b&gt; VISHAY mcl4148.pdf</description>
 <wire x1="-0.65" y1="0.55" x2="0.65" y2="0.55" width="0.1524" layer="51"/>
 <wire x1="-0.65" y1="-0.55" x2="0.65" y2="-0.55" width="0.1524" layer="51"/>
@@ -1714,7 +1714,7 @@ Package DO-213AB = http://www.diotec.com/pdf/sm4001.pdf</description>
 <rectangle x1="0.65" y1="-0.65" x2="0.95" y2="0.65" layer="51"/>
 <rectangle x1="-0.5" y1="-0.5" x2="-0.2" y2="0.55" layer="51"/>
 </package>
-<package name="SC79_INFINEON">
+<package name="SC79_INFINEON" urn="urn:adsk.eagle:footprint:43211/1" library_version="8">
 <description>&lt;b&gt;Diode Package&lt;/b&gt; Reflow soldering&lt;p&gt;
 INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="-0.55" y1="0.35" x2="0.55" y2="0.35" width="0.1016" layer="21"/>
@@ -1729,7 +1729,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <rectangle x1="0.55" y1="-0.15" x2="0.8" y2="0.15" layer="51"/>
 <rectangle x1="-0.55" y1="-0.35" x2="0" y2="0.35" layer="51"/>
 </package>
-<package name="SCD80_INFINEON">
+<package name="SCD80_INFINEON" urn="urn:adsk.eagle:footprint:43212/1" library_version="8">
 <description>&lt;b&gt;Diode Package&lt;/b&gt; Reflow soldering&lt;p&gt;
 INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="-0.6" y1="0.35" x2="-0.6" y2="-0.35" width="0.1016" layer="51"/>
@@ -1744,7 +1744,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <rectangle x1="-0.85" y1="-0.15" x2="-0.6" y2="0.15" layer="51"/>
 <rectangle x1="0.6" y1="-0.15" x2="0.85" y2="0.15" layer="51"/>
 </package>
-<package name="DO214AA">
+<package name="DO214AA" urn="urn:adsk.eagle:footprint:43213/1" library_version="8">
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
 <wire x1="-2.4" y1="1.1" x2="2.4" y2="1.1" width="0.254" layer="51"/>
 <wire x1="2.4" y1="1.1" x2="2.4" y2="-1.1" width="0.254" layer="51"/>
@@ -1761,7 +1761,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <rectangle x1="2.5" y1="-0.7" x2="2.75" y2="0.65" layer="51"/>
 <rectangle x1="-1.4" y1="-1.05" x2="-1.1" y2="1.05" layer="21"/>
 </package>
-<package name="DO214AC">
+<package name="DO214AC" urn="urn:adsk.eagle:footprint:43214/1" library_version="8">
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
 <wire x1="-2.3" y1="1" x2="2.3" y2="1" width="0.254" layer="51"/>
 <wire x1="2.3" y1="1" x2="2.3" y2="-0.95" width="0.254" layer="51"/>
@@ -1778,7 +1778,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <rectangle x1="2.4" y1="-0.7" x2="2.65" y2="0.65" layer="51"/>
 <rectangle x1="-1" y1="-1.05" x2="-0.7" y2="1.05" layer="21"/>
 </package>
-<package name="DO214BA">
+<package name="DO214BA" urn="urn:adsk.eagle:footprint:43215/1" library_version="8">
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
 <wire x1="-2.5" y1="1.35" x2="2.5" y2="1.35" width="0.254" layer="51"/>
 <wire x1="2.5" y1="1.35" x2="2.5" y2="-1.35" width="0.254" layer="51"/>
@@ -1795,7 +1795,7 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <rectangle x1="2.6" y1="-0.7" x2="2.85" y2="0.65" layer="51"/>
 <rectangle x1="-1" y1="-1.05" x2="-0.7" y2="1.05" layer="21"/>
 </package>
-<package name="DO-214AC">
+<package name="DO-214AC" urn="urn:adsk.eagle:footprint:43216/1" library_version="8">
 <description>&lt;b&gt;SURFACE MOUNT GENERAL RECTIFIER&lt;/b&gt; JEDEC DO-214AC molded platic body&lt;p&gt;
 Method 2026&lt;br&gt;
 Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
@@ -1814,7 +1814,7 @@ Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
 <rectangle x1="-1.065" y1="-1.225" x2="-0.39" y2="1.225" layer="21"/>
 <rectangle x1="-1.75" y1="-1.225" x2="-1.075" y2="1.225" layer="51"/>
 </package>
-<package name="DO41-7.6">
+<package name="DO41-7.6" urn="urn:adsk.eagle:footprint:43217/1" library_version="8">
 <description>&lt;b&gt;DO41&lt;/b&gt; 7.6mm x 2mm&lt;p&gt;
 Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <wire x1="2.082" y1="-0.92" x2="-2.082" y2="-0.92" width="0.1524" layer="21"/>
@@ -1839,21 +1839,440 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <rectangle x1="-2.717" y1="-0.425" x2="-2.082" y2="0.425" layer="21"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="SOD123" urn="urn:adsk.eagle:package:43420/1" type="box" library_version="8">
+<description>Diode</description>
+<packageinstances>
+<packageinstance name="SOD123"/>
+</packageinstances>
+</package3d>
+<package3d name="DO41-10" urn="urn:adsk.eagle:package:43336/1" type="box" library_version="8">
+<description>DIODE
+diameter 2.54 mm, horizontal, grid 10.16 mm</description>
+<packageinstances>
+<packageinstance name="DO41-10"/>
+</packageinstances>
+</package3d>
+<package3d name="DO35-10" urn="urn:adsk.eagle:package:43344/2" type="model" library_version="8">
+<description>DIODE
+diameter 2 mm, horizontal, grid 10.16 mm</description>
+<packageinstances>
+<packageinstance name="DO35-10"/>
+</packageinstances>
+</package3d>
+<package3d name="DO204-10" urn="urn:adsk.eagle:package:43366/1" type="box" library_version="8">
+<description>DIODE
+diameter 4 mm, horizontal, grid 10 mm</description>
+<packageinstances>
+<packageinstance name="DO204-10"/>
+</packageinstances>
+</package3d>
+<package3d name="DO15-12" urn="urn:adsk.eagle:package:43369/2" type="model" library_version="8">
+<description>DIODE
+diameter 3.5 mm, horizontal, grid 12.7 mm</description>
+<packageinstances>
+<packageinstance name="DO15-12"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD57-10" urn="urn:adsk.eagle:package:43367/1" type="box" library_version="8">
+<description>DIODE
+diameter 4 mm, vertical, grid 10.16 mm</description>
+<packageinstances>
+<packageinstance name="SOD57-10"/>
+</packageinstances>
+</package3d>
+<package3d name="DO201-15" urn="urn:adsk.eagle:package:43365/2" type="model" library_version="8">
+<description>DIODE
+diameter 5.6 mm, horizontal, grid 15.24 mm</description>
+<packageinstances>
+<packageinstance name="DO201-15"/>
+</packageinstances>
+</package3d>
+<package3d name="DO07" urn="urn:adsk.eagle:package:43394/2" type="model" library_version="8">
+<description>DIODE
+diameter 2.54 mm, horizontal, grid 10.16 mm</description>
+<packageinstances>
+<packageinstance name="DO07"/>
+</packageinstances>
+</package3d>
+<package3d name="P1-10" urn="urn:adsk.eagle:package:43375/1" type="box" library_version="8">
+<description>DIODE
+diameter 3 mm, horizontal, grid 10.16 mm</description>
+<packageinstances>
+<packageinstance name="P1-10"/>
+</packageinstances>
+</package3d>
+<package3d name="P2-15" urn="urn:adsk.eagle:package:43345/2" type="model" library_version="8">
+<description>DIODE
+diameter 5 mm, horizontal, grid 12.7 mm</description>
+<packageinstances>
+<packageinstance name="P2-15"/>
+</packageinstances>
+</package3d>
+<package3d name="DO34-7" urn="urn:adsk.eagle:package:43348/1" type="box" library_version="8">
+<description>DIODE
+diameter 1.8 mm, horizontal, grid 7.62 mm</description>
+<packageinstances>
+<packageinstance name="DO34-7"/>
+</packageinstances>
+</package3d>
+<package3d name="SOT54H" urn="urn:adsk.eagle:package:43359/1" type="box" library_version="8">
+<description>DIODE
+2-lead plastic, vertical</description>
+<packageinstances>
+<packageinstance name="SOT54H"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD523" urn="urn:adsk.eagle:package:43410/4" type="model" library_version="8">
+<description>DIODE</description>
+<packageinstances>
+<packageinstance name="SOD523"/>
+</packageinstances>
+</package3d>
+<package3d name="TO18D" urn="urn:adsk.eagle:package:43443/1" type="box" library_version="8">
+<description>DIODE
+2-lead metall, vertical</description>
+<packageinstances>
+<packageinstance name="TO18D"/>
+</packageinstances>
+</package3d>
+<package3d name="C1702-05" urn="urn:adsk.eagle:package:43430/1" type="box" library_version="8">
+<description>DIODE
+diameter 3.5 mm, vertical, grid 5.08 mm</description>
+<packageinstances>
+<packageinstance name="C1702-05"/>
+</packageinstances>
+</package3d>
+<package3d name="C1702-15" urn="urn:adsk.eagle:package:43351/1" type="box" library_version="8">
+<description>DIODE
+diameter 3.5 mm, horizontal, grid 15.24 mm</description>
+<packageinstances>
+<packageinstance name="C1702-15"/>
+</packageinstances>
+</package3d>
+<package3d name="SGA-10" urn="urn:adsk.eagle:package:43388/1" type="box" library_version="8">
+<description>DIODE
+diameter 4 mm, vertical, grid 10.16 mm</description>
+<packageinstances>
+<packageinstance name="SGA-10"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD64-10" urn="urn:adsk.eagle:package:43385/1" type="box" library_version="8">
+<description>DIODE
+diameter 4.8 mm, vertical, grid 10.16 mm</description>
+<packageinstances>
+<packageinstance name="SOD64-10"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD61A" urn="urn:adsk.eagle:package:43377/1" type="box" library_version="8">
+<description>DIODE
+diameter 3.5 mm, vertical, grid 10.16 mm</description>
+<packageinstances>
+<packageinstance name="SOD61A"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD61B" urn="urn:adsk.eagle:package:43379/1" type="box" library_version="8">
+<description>DIODE
+diameter 3.5 mm, vertical, grid 15.24 mm</description>
+<packageinstances>
+<packageinstance name="SOD61B"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD61C" urn="urn:adsk.eagle:package:43378/1" type="box" library_version="8">
+<description>DIODE
+diameter 3.5 mm, vertical, grid 17.78 mm</description>
+<packageinstances>
+<packageinstance name="SOD61C"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD61D" urn="urn:adsk.eagle:package:43381/1" type="box" library_version="8">
+<description>DIODE
+diameter 3.5 mm, vertical, grid 15.24 mm</description>
+<packageinstances>
+<packageinstance name="SOD61D"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD61E" urn="urn:adsk.eagle:package:43380/1" type="box" library_version="8">
+<description>DIODE
+diameter 3.5 mm, vertical, grid 20.32 mm</description>
+<packageinstances>
+<packageinstance name="SOD61E"/>
+</packageinstances>
+</package3d>
+<package3d name="DO27-15" urn="urn:adsk.eagle:package:43337/3" type="model" library_version="8">
+<description>DIODE
+diameter 5 mm, horizontal, grid 15.24 mm</description>
+<packageinstances>
+<packageinstance name="DO27-15"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD81" urn="urn:adsk.eagle:package:43363/2" type="model" library_version="8">
+<description>DIODE
+diameter 2.3 mm, vertical, grid 10.16 mm</description>
+<packageinstances>
+<packageinstance name="SOD81"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD84" urn="urn:adsk.eagle:package:43376/2" type="model" library_version="8">
+<description>DIODE
+diameter 3.3 mm, vertical, grid 10.16 mm</description>
+<packageinstances>
+<packageinstance name="SOD84"/>
+</packageinstances>
+</package3d>
+<package3d name="F126-10" urn="urn:adsk.eagle:package:43396/2" type="model" library_version="8">
+<description>DIODE
+diameter 3 mm, horizontal, grid 10.16 mm</description>
+<packageinstances>
+<packageinstance name="F126-10"/>
+</packageinstances>
+</package3d>
+<package3d name="DO220S" urn="urn:adsk.eagle:package:43371/4" type="model" library_version="8">
+<description>DIODE
+2-lead molded, vertical</description>
+<packageinstances>
+<packageinstance name="DO220S"/>
+</packageinstances>
+</package3d>
+<package3d name="TO220AC" urn="urn:adsk.eagle:package:43370/1" type="box" library_version="8">
+<description>DIODE
+2-lead molded, horizontal</description>
+<packageinstances>
+<packageinstance name="TO220AC"/>
+</packageinstances>
+</package3d>
+<package3d name="TO220ACS" urn="urn:adsk.eagle:package:43373/3" type="model" library_version="8">
+<description>DIODE
+2-lead molded, vertical</description>
+<packageinstances>
+<packageinstance name="TO220ACS"/>
+</packageinstances>
+</package3d>
+<package3d name="G4-12" urn="urn:adsk.eagle:package:43368/1" type="box" library_version="8">
+<description>DIODE
+diameter 7.62 mm, horizontal, grid 12.7 mm</description>
+<packageinstances>
+<packageinstance name="G4-12"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD83-12" urn="urn:adsk.eagle:package:43382/1" type="box" library_version="8">
+<description>DIODE
+diameter 4.8 mm, vertical, grid 12.7 mm</description>
+<packageinstances>
+<packageinstance name="SOD83-12"/>
+</packageinstances>
+</package3d>
+<package3d name="SMB" urn="urn:adsk.eagle:package:43404/2" type="model" library_version="8">
+<description>DIODE</description>
+<packageinstances>
+<packageinstance name="SMB"/>
+</packageinstances>
+</package3d>
+<package3d name="P6-15" urn="urn:adsk.eagle:package:43343/1" type="box" library_version="8">
+<description>DIODE
+diameter 9 mm, horizontal, grid 15.24 mm</description>
+<packageinstances>
+<packageinstance name="P6-15"/>
+</packageinstances>
+</package3d>
+<package3d name="C2673" urn="urn:adsk.eagle:package:43390/1" type="box" library_version="8">
+<description>DIODE
+diameter 5.2 mm, horizontal, grid 15.24 mm</description>
+<packageinstances>
+<packageinstance name="C2673"/>
+</packageinstances>
+</package3d>
+<package3d name="C221B1A" urn="urn:adsk.eagle:package:43391/1" type="box" library_version="8">
+<description>DIODE
+2-lead molded, horizontal</description>
+<packageinstances>
+<packageinstance name="C221B1A"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD80C" urn="urn:adsk.eagle:package:43405/2" type="model" library_version="8">
+<description>DIODE</description>
+<packageinstances>
+<packageinstance name="SOD80C"/>
+</packageinstances>
+</package3d>
+<package3d name="D-10" urn="urn:adsk.eagle:package:43434/1" type="box" library_version="8">
+<description>DIODE</description>
+<packageinstances>
+<packageinstance name="D-10"/>
+</packageinstances>
+</package3d>
+<package3d name="D-12.5" urn="urn:adsk.eagle:package:43427/1" type="box" library_version="8">
+<description>DIODE</description>
+<packageinstances>
+<packageinstance name="D-12.5"/>
+</packageinstances>
+</package3d>
+<package3d name="D-2.5" urn="urn:adsk.eagle:package:43419/1" type="box" library_version="8">
+<description>DIODE</description>
+<packageinstances>
+<packageinstance name="D-2.5"/>
+</packageinstances>
+</package3d>
+<package3d name="D-5" urn="urn:adsk.eagle:package:43440/1" type="box" library_version="8">
+<description>DIODE</description>
+<packageinstances>
+<packageinstance name="D-5"/>
+</packageinstances>
+</package3d>
+<package3d name="D-7.5" urn="urn:adsk.eagle:package:43423/1" type="box" library_version="8">
+<description>DIODE</description>
+<packageinstances>
+<packageinstance name="D-7.5"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD106-R" urn="urn:adsk.eagle:package:43424/2" type="model" library_version="8">
+<description>SOD106 Reflow soldering Philips SC01_Mounting_1996.pdf</description>
+<packageinstances>
+<packageinstance name="SOD106-R"/>
+</packageinstances>
+</package3d>
+<package3d name="SMC" urn="urn:adsk.eagle:package:43425/2" type="model" library_version="8">
+<description>DIODE</description>
+<packageinstances>
+<packageinstance name="SMC"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD106-W" urn="urn:adsk.eagle:package:43431/2" type="model" library_version="8">
+<description>SOD106 Wave soldering Philips SC01_Mounting_1996.pdf</description>
+<packageinstances>
+<packageinstance name="SOD106-W"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD106A-R" urn="urn:adsk.eagle:package:43438/2" type="model" library_version="8">
+<description>SOD106A Reflow soldering Philips SC01_Mounting_1996.pdf</description>
+<packageinstances>
+<packageinstance name="SOD106A-R"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD110-W" urn="urn:adsk.eagle:package:43428/2" type="model" library_version="8">
+<description>SOD110 Wave soldering Philips SC01_Mounting_1996.pdf</description>
+<packageinstances>
+<packageinstance name="SOD110-W"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD110-R" urn="urn:adsk.eagle:package:43426/2" type="model" library_version="8">
+<description>SOD110 Reflow soldering Philips SC01_Mounting_1996.pdf</description>
+<packageinstances>
+<packageinstance name="SOD110-R"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD323-R" urn="urn:adsk.eagle:package:43437/1" type="box" library_version="8">
+<description>SOD323 Reflow soldering Philips SC01_Mounting_1996.pdf</description>
+<packageinstances>
+<packageinstance name="SOD323-R"/>
+</packageinstances>
+</package3d>
+<package3d name="SOD323-W" urn="urn:adsk.eagle:package:43418/1" type="box" library_version="8">
+<description>SOD323 Wave soldering Philips SC01_Mounting_1996.pdf</description>
+<packageinstances>
+<packageinstance name="SOD323-W"/>
+</packageinstances>
+</package3d>
+<package3d name="GF1" urn="urn:adsk.eagle:package:43422/1" type="box" library_version="8">
+<description>GF1
+General Semiconductor</description>
+<packageinstances>
+<packageinstance name="GF1"/>
+</packageinstances>
+</package3d>
+<package3d name="MINIMELF" urn="urn:adsk.eagle:package:43429/2" type="model" library_version="8">
+<description>Mini Melf Diode</description>
+<packageinstances>
+<packageinstance name="MINIMELF"/>
+</packageinstances>
+</package3d>
+<package3d name="MELF-MLL41" urn="urn:adsk.eagle:package:43444/1" type="box" library_version="8">
+<description>DIODE
+Package DO-213AB = http://www.diotec.com/pdf/sm4001.pdf</description>
+<packageinstances>
+<packageinstance name="MELF-MLL41"/>
+</packageinstances>
+</package3d>
+<package3d name="MICROMELF-R" urn="urn:adsk.eagle:package:43436/2" type="model" library_version="8">
+<description>Micro Melf Diode Reflow soldering VISHAY mcl4148.pdf</description>
+<packageinstances>
+<packageinstance name="MICROMELF-R"/>
+</packageinstances>
+</package3d>
+<package3d name="MICROMELF-W" urn="urn:adsk.eagle:package:43441/2" type="model" library_version="8">
+<description>Micro Melf Diode Wave soldering VISHAY mcl4148.pdf</description>
+<packageinstances>
+<packageinstance name="MICROMELF-W"/>
+</packageinstances>
+</package3d>
+<package3d name="SC79_INFINEON" urn="urn:adsk.eagle:package:43432/2" type="model" library_version="8">
+<description>Diode Package Reflow soldering
+INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
+<packageinstances>
+<packageinstance name="SC79_INFINEON"/>
+</packageinstances>
+</package3d>
+<package3d name="SCD80_INFINEON" urn="urn:adsk.eagle:package:43414/1" type="box" library_version="8">
+<description>Diode Package Reflow soldering
+INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
+<packageinstances>
+<packageinstance name="SCD80_INFINEON"/>
+</packageinstances>
+</package3d>
+<package3d name="DO214AA" urn="urn:adsk.eagle:package:43433/2" type="model" library_version="8">
+<description>DIODE</description>
+<packageinstances>
+<packageinstance name="DO214AA"/>
+</packageinstances>
+</package3d>
+<package3d name="DO214AC" urn="urn:adsk.eagle:package:43417/2" type="model" library_version="8">
+<description>DIODE</description>
+<packageinstances>
+<packageinstance name="DO214AC"/>
+</packageinstances>
+</package3d>
+<package3d name="DO214BA" urn="urn:adsk.eagle:package:43453/2" type="model" library_version="8">
+<description>DIODE</description>
+<packageinstances>
+<packageinstance name="DO214BA"/>
+</packageinstances>
+</package3d>
+<package3d name="DO-214AC" urn="urn:adsk.eagle:package:43416/2" type="model" library_version="8">
+<description>SURFACE MOUNT GENERAL RECTIFIER JEDEC DO-214AC molded platic body
+Method 2026
+Source: http://www.kingtronics.com/SMD_M7/M7_SMD_4007.pdf</description>
+<packageinstances>
+<packageinstance name="DO-214AC"/>
+</packageinstances>
+</package3d>
+<package3d name="DO41-7.6" urn="urn:adsk.eagle:package:43421/1" type="box" library_version="8">
+<description>DO41 7.6mm x 2mm
+Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
+<packageinstances>
+<packageinstance name="DO41-7.6"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="D">
+<symbol name="D" urn="urn:adsk.eagle:symbol:43091/2" library_version="8">
 <wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
 <wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
 <text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
 <text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
+<text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="DIODE-" prefix="D" uservalue="yes">
+<deviceset name="DIODE-" urn="urn:adsk.eagle:component:43657/21" prefix="D" uservalue="yes" library_version="8">
 <description>&lt;b&gt;DIODE&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="D" x="0" y="0"/>
@@ -1864,8 +2283,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43336/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO35-10" package="DO35-10">
@@ -1873,8 +2297,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43344/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO204-10" package="DO204-10">
@@ -1882,8 +2311,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43366/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO15-12" package="DO15-12">
@@ -1891,8 +2325,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43369/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD57-10" package="SOD57-10">
@@ -1900,8 +2339,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43367/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO201-15" package="DO201-15">
@@ -1909,8 +2353,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43365/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO07" package="DO07">
@@ -1918,8 +2367,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43394/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="P1-10" package="P1-10">
@@ -1927,8 +2381,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43375/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="P2-15" package="P2-15">
@@ -1936,8 +2395,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43345/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO34-7" package="DO34-7">
@@ -1945,8 +2409,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43348/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOT54H" package="SOT54H">
@@ -1954,8 +2423,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43359/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD523" package="SOD523">
@@ -1963,8 +2437,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43410/4"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO18D" package="TO18D">
@@ -1972,8 +2451,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43443/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="C1702-05" package="C1702-05">
@@ -1981,8 +2465,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43430/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="C1702-15" package="C1702-15">
@@ -1990,8 +2479,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43351/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SGA-10" package="SGA-10">
@@ -1999,8 +2493,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43388/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD64-10" package="SOD64-10">
@@ -2008,8 +2507,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43385/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD61A" package="SOD61A">
@@ -2017,8 +2521,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43377/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD61B" package="SOD61B">
@@ -2026,8 +2535,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43379/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD61C" package="SOD61C">
@@ -2035,8 +2549,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43378/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD61D" package="SOD61D">
@@ -2044,8 +2563,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43381/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD61E" package="SOD61E">
@@ -2053,8 +2577,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43380/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO27-15" package="DO27-15">
@@ -2062,8 +2591,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43337/3"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD81" package="SOD81">
@@ -2071,8 +2605,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43363/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD84" package="SOD84">
@@ -2080,8 +2619,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43376/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="F126-10" package="F126-10">
@@ -2089,8 +2633,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43396/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO220S" package="DO220S">
@@ -2098,8 +2647,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43371/4"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO220H" package="TO220AC">
@@ -2107,8 +2661,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43370/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="TO220V" package="TO220ACS">
@@ -2116,8 +2675,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43373/3"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="G4-12" package="G4-12">
@@ -2125,8 +2689,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43368/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD83-12" package="SOD83-12">
@@ -2134,8 +2703,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43382/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SMB" package="SMB">
@@ -2143,8 +2717,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43404/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="11" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="P6-15" package="P6-15">
@@ -2152,8 +2731,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43343/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="C2673" package="C2673">
@@ -2161,8 +2745,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43390/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="C221B1A" package="C221B1A">
@@ -2170,8 +2759,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43391/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD80C" package="SOD80C">
@@ -2179,8 +2773,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43405/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="9" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="D-10" package="D-10">
@@ -2188,8 +2787,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43434/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="D-12.5" package="D-12.5">
@@ -2197,8 +2801,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43427/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="D-2.5" package="D-2.5">
@@ -2206,8 +2815,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43419/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="10" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="D-5" package="D-5">
@@ -2215,8 +2829,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43440/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="8" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="D-7.5" package="D-7.5">
@@ -2224,8 +2843,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43423/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD106-R" package="SOD106-R">
@@ -2233,8 +2857,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43424/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SMC" package="SMC">
@@ -2242,8 +2871,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43425/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD106-W" package="SOD106-W">
@@ -2251,8 +2885,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43431/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD106A-R" package="SOD106A-R">
@@ -2260,8 +2899,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43438/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD110-W" package="SOD110-W">
@@ -2269,8 +2913,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43428/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD110-R" package="SOD110-R">
@@ -2278,8 +2927,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43426/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD123" package="SOD123">
@@ -2287,8 +2941,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43420/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="22" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD323-R" package="SOD323-R">
@@ -2296,8 +2955,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43437/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SOD323-W" package="SOD323-W">
@@ -2305,8 +2969,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43418/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="GF1" package="GF1">
@@ -2314,8 +2983,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43422/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="MINIMELF" package="MINIMELF">
@@ -2323,8 +2997,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43429/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="25" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="MELF-MLL41" package="MELF-MLL41">
@@ -2332,8 +3011,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43444/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="3" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="MICROMELF-R" package="MICROMELF-R">
@@ -2341,8 +3025,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43436/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="MICROMELF-W" package="MICROMELF-W">
@@ -2350,8 +3039,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43441/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="1" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SC79_INFINEON" package="SC79_INFINEON">
@@ -2359,8 +3053,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43432/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SCD80-INFINEON" package="SCD80_INFINEON">
@@ -2368,8 +3067,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43414/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO214AA" package="DO214AA">
@@ -2377,8 +3081,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43433/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="8" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO214AC" package="DO214AC">
@@ -2386,8 +3095,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43417/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="14" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO214BA" package="DO214BA">
@@ -2395,8 +3109,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43453/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="4" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO-214AC" package="DO-214AC">
@@ -2404,8 +3123,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43416/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="25" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="DO41-7.6" package="DO41-7.6">
@@ -2413,8 +3137,13 @@ Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43421/1"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="7" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2713,11 +3442,11 @@ Created by Upverter.com</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="pinhead">
+<library name="pinhead" urn="urn:adsk.eagle:library:325">
 <description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="1X04">
+<package name="1X04" urn="urn:adsk.eagle:footprint:22258/1" library_version="4">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
 <wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
@@ -2748,10 +3477,10 @@ Created by Upverter.com</description>
 <wire x1="3.175" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="2.54" y1="-0.635" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
 <wire x1="4.445" y1="-1.27" x2="3.175" y2="-1.27" width="0.1524" layer="21"/>
-<pad name="1" x="-3.81" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="2" x="-1.27" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="3" x="1.27" y="0" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="4" x="3.81" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="1" x="-3.81" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="0" drill="1.016" shape="long" rot="R90"/>
 <text x="-5.1562" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-5.08" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
@@ -2759,7 +3488,7 @@ Created by Upverter.com</description>
 <rectangle x1="-4.064" y1="-0.254" x2="-3.556" y2="0.254" layer="51"/>
 <rectangle x1="3.556" y1="-0.254" x2="4.064" y2="0.254" layer="51"/>
 </package>
-<package name="1X04/90">
+<package name="1X04/90" urn="urn:adsk.eagle:footprint:22259/1" library_version="4">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-5.08" y1="-1.905" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="-2.54" y1="-1.905" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
@@ -2778,10 +3507,10 @@ Created by Upverter.com</description>
 <wire x1="5.08" y1="-1.905" x2="5.08" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="5.08" y1="0.635" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
 <wire x1="3.81" y1="6.985" x2="3.81" y2="1.27" width="0.762" layer="21"/>
-<pad name="1" x="-3.81" y="-3.81" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="2" x="-1.27" y="-3.81" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="1.016" shape="octagon" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="1" x="-3.81" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="1.016" shape="long" rot="R90"/>
 <text x="-5.715" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
 <text x="6.985" y="-4.445" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
 <rectangle x1="-4.191" y1="0.635" x2="-3.429" y2="1.143" layer="21"/>
@@ -2794,8 +3523,22 @@ Created by Upverter.com</description>
 <rectangle x1="3.429" y1="-2.921" x2="4.191" y2="-1.905" layer="21"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="1X04" urn="urn:adsk.eagle:package:22407/2" type="model" library_version="4">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X04"/>
+</packageinstances>
+</package3d>
+<package3d name="1X04/90" urn="urn:adsk.eagle:package:22404/2" type="model" library_version="4">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="1X04/90"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="PINHD4">
+<symbol name="PINHD4" urn="urn:adsk.eagle:symbol:22257/1" library_version="4">
 <wire x1="-6.35" y1="-5.08" x2="1.27" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="-5.08" x2="1.27" y2="7.62" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="7.62" x2="-6.35" y2="7.62" width="0.4064" layer="94"/>
@@ -2809,7 +3552,7 @@ Created by Upverter.com</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PINHD-1X4" prefix="JP" uservalue="yes">
+<deviceset name="PINHD-1X4" urn="urn:adsk.eagle:component:22499/5" prefix="JP" uservalue="yes" library_version="4">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="PINHD4" x="0" y="0"/>
@@ -2822,8 +3565,13 @@ Created by Upverter.com</description>
 <connect gate="A" pin="3" pad="3"/>
 <connect gate="A" pin="4" pad="4"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22407/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="91" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="/90" package="1X04/90">
@@ -2833,8 +3581,13 @@ Created by Upverter.com</description>
 <connect gate="A" pin="3" pad="3"/>
 <connect gate="A" pin="4" pad="4"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22404/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="9" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14621,108 +15374,72 @@ Source: &lt;a href="https://www.rhydolabz.com/documents/30/HLK-20M12.pdf"&gt; Da
 </deviceset>
 </devicesets>
 </library>
-<library name="SpaceDIY_connectors">
-<packages>
-<package name="3,0-PAD" urn="urn:adsk.eagle:footprint:14251/1" locally_modified="yes">
-<description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 3.0 mm, round</description>
-<wire x1="-2.159" y1="0" x2="0" y2="-2.159" width="2.4892" layer="51" curve="90" cap="flat"/>
-<wire x1="0" y1="2.159" x2="2.159" y2="0" width="2.4892" layer="51" curve="-90" cap="flat"/>
-<circle x="0" y="0" radius="3.429" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
-<circle x="0" y="0" radius="3.556" width="1.016" layer="39"/>
-<circle x="0" y="0" radius="3.556" width="1.016" layer="40"/>
-<circle x="0" y="0" radius="3.556" width="1.016" layer="43"/>
-<circle x="0" y="0" radius="1.6" width="0.2032" layer="21"/>
-<pad name="B3,0" x="0" y="0" drill="3" diameter="5.842"/>
-<text x="-1.27" y="-3.81" size="1.27" layer="48">3,0</text>
-<pad name="P$2" x="0" y="2.31" drill="0.6"/>
-<pad name="P$3" x="1.63784375" y="1.63373125" drill="0.6"/>
-<pad name="P$4" x="2.31778125" y="-0.002590625" drill="0.6"/>
-<pad name="P$5" x="1.6415125" y="-1.6404375" drill="0.6"/>
-<pad name="P$6" x="0.0051875" y="-2.320375" drill="0.6"/>
-<pad name="P$7" x="-1.63265625" y="-1.64410625" drill="0.6"/>
-<pad name="P$8" x="-2.31259375" y="-0.00778125" drill="0.6"/>
-<pad name="P$9" x="-1.636325" y="1.6300625" drill="0.6"/>
-</package>
-<package name="3,6-PAD" urn="urn:adsk.eagle:footprint:14254/1" locally_modified="yes">
-<description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 3.6 mm, round</description>
-<circle x="0" y="0" radius="0.762" width="0.4572" layer="51"/>
-<circle x="0" y="0" radius="3.556" width="1.016" layer="43"/>
-<circle x="0" y="0" radius="1.9" width="0.2032" layer="21"/>
-<pad name="B3,6" x="0" y="0" drill="3.6" diameter="5.842"/>
-<pad name="P$1" x="0" y="2.4" drill="0.6" diameter="0.6096"/>
-<pad name="P$2" x="-2.4" y="0" drill="0.6" diameter="0.6096"/>
-<pad name="P$3" x="0" y="-2.4" drill="0.6" diameter="0.6096"/>
-<pad name="P$4" x="2.4" y="0" drill="0.6" diameter="0.6096"/>
-<pad name="P$5" x="-1.7" y="1.8" drill="0.6" diameter="0.6096"/>
-<pad name="P$6" x="1.7" y="1.7" drill="0.6" diameter="0.6096"/>
-<pad name="P$7" x="1.7" y="-1.7" drill="0.6" diameter="0.6096"/>
-<pad name="P$8" x="-1.7" y="-1.7" drill="0.6" diameter="0.6096"/>
-</package>
-</packages>
-<packages3d>
-<package3d name="3,0-PAD" urn="urn:adsk.eagle:package:14280/1" type="box">
-<description>MOUNTING PAD 3.0 mm, round</description>
-<packageinstances>
-<packageinstance name="3,0-PAD"/>
-</packageinstances>
-</package3d>
-<package3d name="3,6-PAD" urn="urn:adsk.eagle:package:14284/1" type="box">
-<description>MOUNTING PAD 3.6 mm, round</description>
-<packageinstances>
-<packageinstance name="3,6-PAD"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="MOUNT-PAD">
-<wire x1="0.254" y1="2.032" x2="2.032" y2="0.254" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
-<wire x1="-2.032" y1="0.254" x2="-0.254" y2="2.032" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
-<wire x1="-2.032" y1="-0.254" x2="-0.254" y2="-2.032" width="1.016" layer="94" curve="75.749967" cap="flat"/>
-<wire x1="0.254" y1="-2.032" x2="2.032" y2="-0.254" width="1.016" layer="94" curve="75.749967" cap="flat"/>
-<circle x="0" y="0" radius="1.524" width="0.0508" layer="94"/>
-<text x="2.794" y="0.5842" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.794" y="-2.4638" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="MOUNT" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MOUNT-PAD-ROUND" prefix="H">
-<description>&lt;b&gt;MOUNTING PAD&lt;/b&gt;, round</description>
-<gates>
-<gate name="G$1" symbol="MOUNT-PAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="3.6" package="3,6-PAD">
-<connects>
-<connect gate="G$1" pin="MOUNT" pad="B3,6"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14284/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="" package="3,0-PAD">
-<connects>
-<connect gate="G$1" pin="MOUNT" pad="B3,0 P$2 P$3 P$4 P$5 P$6 P$7 P$8 P$9"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14280/1"/>
-</package3dinstances>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="SpaceDIY_symbols">
 <packages>
+<package name="92X87">
+<wire x1="3.75" y1="0" x2="0" y2="3.75" width="0" layer="20" curve="-90"/>
+<wire x1="0" y1="3.75" x2="0" y2="83.5" width="0" layer="20"/>
+<wire x1="0" y1="83.5" x2="3.5" y2="87" width="0" layer="20" curve="-90"/>
+<wire x1="3.5" y1="87" x2="88.5" y2="87" width="0" layer="20"/>
+<wire x1="88.5" y1="87" x2="92" y2="83.5" width="0" layer="20" curve="-90"/>
+<wire x1="92" y1="83.5" x2="92" y2="3.5" width="0" layer="20"/>
+<wire x1="92" y1="3.5" x2="88.5" y2="0" width="0" layer="20" curve="-90"/>
+<wire x1="88.5" y1="0" x2="3.75" y2="0" width="0" layer="20"/>
+<wire x1="11" y1="87" x2="11" y2="77" width="0.5" layer="49"/>
+<wire x1="11" y1="77" x2="81" y2="77" width="0.5" layer="49"/>
+<wire x1="81" y1="77" x2="81" y2="87" width="0.5" layer="49"/>
+<wire x1="11" y1="0" x2="11" y2="10" width="0.5" layer="49"/>
+<wire x1="11" y1="10" x2="81" y2="10" width="0.5" layer="49"/>
+<wire x1="81" y1="10" x2="81" y2="0" width="0.5" layer="49"/>
+<circle x="3.5" y="3.5" radius="0.762" width="0.4572" layer="51"/>
+<circle x="3.5" y="3.5" radius="3.556" width="1.016" layer="43"/>
+<circle x="3.5" y="3.5" radius="1.9" width="0.2032" layer="21"/>
+<pad name="B3,6" x="3.5" y="3.5" drill="3.6" diameter="6"/>
+<pad name="P$1" x="3.5" y="5.9" drill="0.6" diameter="0.6096"/>
+<pad name="P$2" x="1.1" y="3.5" drill="0.6" diameter="0.6096"/>
+<pad name="P$3" x="3.5" y="1.1" drill="0.6" diameter="0.6096"/>
+<pad name="P$4" x="5.9" y="3.5" drill="0.6" diameter="0.6096"/>
+<pad name="P$5" x="1.8" y="5.3" drill="0.6" diameter="0.6096"/>
+<pad name="P$6" x="5.2" y="5.2" drill="0.6" diameter="0.6096"/>
+<pad name="P$7" x="5.2" y="1.8" drill="0.6" diameter="0.6096"/>
+<pad name="P$8" x="1.8" y="1.8" drill="0.6" diameter="0.6096"/>
+<circle x="3.5" y="83.5" radius="0.762" width="0.4572" layer="51"/>
+<circle x="3.5" y="83.5" radius="3.556" width="1.016" layer="43"/>
+<circle x="3.5" y="83.5" radius="1.9" width="0.2032" layer="21"/>
+<pad name="B3,1" x="3.5" y="83.5" drill="3.6" diameter="6"/>
+<pad name="P$9" x="3.5" y="85.9" drill="0.6" diameter="0.6096"/>
+<pad name="P$10" x="1.1" y="83.5" drill="0.6" diameter="0.6096"/>
+<pad name="P$11" x="3.5" y="81.1" drill="0.6" diameter="0.6096"/>
+<pad name="P$12" x="5.9" y="83.5" drill="0.6" diameter="0.6096"/>
+<pad name="P$13" x="1.8" y="85.3" drill="0.6" diameter="0.6096"/>
+<pad name="P$14" x="5.2" y="85.2" drill="0.6" diameter="0.6096"/>
+<pad name="P$15" x="5.2" y="81.8" drill="0.6" diameter="0.6096"/>
+<pad name="P$16" x="1.8" y="81.8" drill="0.6" diameter="0.6096"/>
+<circle x="88.5" y="83.5" radius="0.762" width="0.4572" layer="51"/>
+<circle x="88.5" y="83.5" radius="3.556" width="1.016" layer="43"/>
+<circle x="88.5" y="83.5" radius="1.9" width="0.2032" layer="21"/>
+<pad name="B3,2" x="88.5" y="83.5" drill="3.6" diameter="6"/>
+<pad name="P$17" x="88.5" y="85.9" drill="0.6" diameter="0.6096"/>
+<pad name="P$18" x="86.1" y="83.5" drill="0.6" diameter="0.6096"/>
+<pad name="P$19" x="88.5" y="81.1" drill="0.6" diameter="0.6096"/>
+<pad name="P$20" x="90.9" y="83.5" drill="0.6" diameter="0.6096"/>
+<pad name="P$21" x="86.8" y="85.3" drill="0.6" diameter="0.6096"/>
+<pad name="P$22" x="90.2" y="85.2" drill="0.6" diameter="0.6096"/>
+<pad name="P$23" x="90.2" y="81.8" drill="0.6" diameter="0.6096"/>
+<pad name="P$24" x="86.8" y="81.8" drill="0.6" diameter="0.6096"/>
+<circle x="88.5" y="3.5" radius="0.762" width="0.4572" layer="51"/>
+<circle x="88.5" y="3.5" radius="3.556" width="1.016" layer="43"/>
+<circle x="88.5" y="3.5" radius="1.9" width="0.2032" layer="21"/>
+<pad name="B3,3" x="88.5" y="3.5" drill="3.6" diameter="6"/>
+<pad name="P$25" x="88.5" y="5.9" drill="0.6" diameter="0.6096"/>
+<pad name="P$26" x="86.1" y="3.5" drill="0.6" diameter="0.6096"/>
+<pad name="P$27" x="88.5" y="1.1" drill="0.6" diameter="0.6096"/>
+<pad name="P$28" x="90.9" y="3.5" drill="0.6" diameter="0.6096"/>
+<pad name="P$29" x="86.8" y="5.3" drill="0.6" diameter="0.6096"/>
+<pad name="P$30" x="90.2" y="5.2" drill="0.6" diameter="0.6096"/>
+<pad name="P$31" x="90.2" y="1.8" drill="0.6" diameter="0.6096"/>
+<pad name="P$32" x="86.8" y="1.8" drill="0.6" diameter="0.6096"/>
+</package>
 </packages>
 <symbols>
 <symbol name="A4L-LOC">
@@ -14747,6 +15464,30 @@ Source: &lt;a href="https://www.rhydolabz.com/documents/30/HLK-20M12.pdf"&gt; Da
 <frame x1="0" y1="0" x2="260.35" y2="179.07" columns="6" rows="4" layer="94"/>
 <text x="217.17" y="20.32" size="2.54" layer="94">&gt;DRAWING_NAME</text>
 <text x="163.83" y="20.32" size="2.54" layer="94">NOTES:</text>
+<wire x1="147.066" y1="18.288" x2="145.288" y2="20.066" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
+<wire x1="149.352" y1="20.066" x2="147.574" y2="18.288" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
+<wire x1="149.352" y1="20.574" x2="147.574" y2="22.352" width="1.016" layer="94" curve="75.749967" cap="flat"/>
+<wire x1="147.066" y1="22.352" x2="145.288" y2="20.574" width="1.016" layer="94" curve="75.749967" cap="flat"/>
+<circle x="147.32" y="20.32" radius="1.524" width="0.0508" layer="94"/>
+<pin name="MOUNT" x="149.86" y="20.32" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="147.066" y1="10.668" x2="145.288" y2="12.446" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
+<wire x1="149.352" y1="12.446" x2="147.574" y2="10.668" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
+<wire x1="149.352" y1="12.954" x2="147.574" y2="14.732" width="1.016" layer="94" curve="75.749967" cap="flat"/>
+<wire x1="147.066" y1="14.732" x2="145.288" y2="12.954" width="1.016" layer="94" curve="75.749967" cap="flat"/>
+<circle x="147.32" y="12.7" radius="1.524" width="0.0508" layer="94"/>
+<pin name="MOUNT1" x="149.86" y="12.7" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="157.734" y1="22.352" x2="159.512" y2="20.574" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
+<wire x1="155.448" y1="20.574" x2="157.226" y2="22.352" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
+<wire x1="155.448" y1="20.066" x2="157.226" y2="18.288" width="1.016" layer="94" curve="75.749967" cap="flat"/>
+<wire x1="157.734" y1="18.288" x2="159.512" y2="20.066" width="1.016" layer="94" curve="75.749967" cap="flat"/>
+<circle x="157.48" y="20.32" radius="1.524" width="0.0508" layer="94"/>
+<pin name="MOUNT2" x="154.94" y="20.32" visible="off" length="short" direction="pas"/>
+<wire x1="157.734" y1="14.732" x2="159.512" y2="12.954" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
+<wire x1="155.448" y1="12.954" x2="157.226" y2="14.732" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
+<wire x1="155.448" y1="12.446" x2="157.226" y2="10.668" width="1.016" layer="94" curve="75.749967" cap="flat"/>
+<wire x1="157.734" y1="10.668" x2="159.512" y2="12.446" width="1.016" layer="94" curve="75.749967" cap="flat"/>
+<circle x="157.48" y="12.7" radius="1.524" width="0.0508" layer="94"/>
+<pin name="MOUNT3" x="154.94" y="12.7" visible="off" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -14757,7 +15498,13 @@ DIN A4, landscape with location and doc. field</description>
 <gate name="G$1" symbol="A4L-LOC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="92X87">
+<connects>
+<connect gate="G$1" pin="MOUNT" pad="B3,1"/>
+<connect gate="G$1" pin="MOUNT1" pad="B3,2"/>
+<connect gate="G$1" pin="MOUNT2" pad="B3,3"/>
+<connect gate="G$1" pin="MOUNT3" pad="B3,6"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -14780,10 +15527,6 @@ DIN A4, landscape with location and doc. field</description>
 </class>
 </classes>
 <parts>
-<part name="H1" library="SpaceDIY_connectors" deviceset="MOUNT-PAD-ROUND" device="" package3d_urn="urn:adsk.eagle:package:14280/1"/>
-<part name="H2" library="SpaceDIY_connectors" deviceset="MOUNT-PAD-ROUND" device="" package3d_urn="urn:adsk.eagle:package:14280/1"/>
-<part name="H3" library="SpaceDIY_connectors" deviceset="MOUNT-PAD-ROUND" device="" package3d_urn="urn:adsk.eagle:package:14280/1"/>
-<part name="H4" library="SpaceDIY_connectors" deviceset="MOUNT-PAD-ROUND" device="" package3d_urn="urn:adsk.eagle:package:14280/1"/>
 <part name="GND20" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="U1" library="esp32" deviceset="ESP-32S" device=""/>
 <part name="Q1" library="Infineon Technologies - IRLR2905TRPBF" deviceset="INFINEON_TECHNOLOGIES_IRLR2905TRPBF" device="INFINEON_TECHNOLOGIES_IRLR2905TRPBF_0_0" value="IRLR2905TRPBF"/>
@@ -14810,7 +15553,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="X5" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1"/>
 <part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="J3" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="J3" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100nF"/>
 <part name="GND11" library="SparkFun" deviceset="GND" device=""/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="22uF"/>
@@ -14826,10 +15569,10 @@ DIN A4, landscape with location and doc. field</description>
 <part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0603" package3d_urn="urn:adsk.eagle:package:15832/1" value="Blue"/>
 <part name="LED3" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0603" package3d_urn="urn:adsk.eagle:package:15832/1" value="Blue"/>
 <part name="LED5" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="SML0603" package3d_urn="urn:adsk.eagle:package:15832/1" value="Blue"/>
-<part name="D2" library="diode" deviceset="DIODE-" device="SOD123"/>
-<part name="D3" library="diode" deviceset="DIODE-" device="SOD123"/>
-<part name="D4" library="diode" deviceset="DIODE-" device="SOD123"/>
-<part name="D5" library="diode" deviceset="DIODE-" device="SOD123"/>
+<part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD123" package3d_urn="urn:adsk.eagle:package:43420/1"/>
+<part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD123" package3d_urn="urn:adsk.eagle:package:43420/1"/>
+<part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD123" package3d_urn="urn:adsk.eagle:package:43420/1"/>
+<part name="D5" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="DIODE-" device="SOD123" package3d_urn="urn:adsk.eagle:package:43420/1"/>
 <part name="JP1" library="SparkFun-Connectors" deviceset="CONN_04X2" device=""/>
 <part name="SUPPLY12" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="10K"/>
@@ -14872,7 +15615,7 @@ DIN A4, landscape with location and doc. field</description>
 <part name="X1" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1"/>
 <part name="GND1" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VCC" device=""/>
-<part name="J1" library="pinhead" deviceset="PINHD-1X4" device=""/>
+<part name="J1" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-1X4" device="" package3d_urn="urn:adsk.eagle:package:22407/2"/>
 <part name="FRAME1" library="SpaceDIY_symbols" deviceset="A4L-LOC" device=""/>
 </parts>
 <sheets>
@@ -14880,46 +15623,32 @@ DIN A4, landscape with location and doc. field</description>
 <plain>
 <wire x1="88.9" y1="175.26" x2="88.9" y2="116.84" width="0.254" layer="95" style="longdash"/>
 <wire x1="88.9" y1="116.84" x2="88.9" y2="101.6" width="0.254" layer="95" style="longdash"/>
-<wire x1="88.9" y1="101.6" x2="50.8" y2="101.6" width="0.254" layer="95" style="longdash"/>
-<wire x1="50.8" y1="101.6" x2="5.08" y2="101.6" width="0.254" layer="95" style="longdash"/>
+<wire x1="88.9" y1="101.6" x2="5.08" y2="101.6" width="0.254" layer="95" style="longdash"/>
 <wire x1="88.9" y1="116.84" x2="109.22" y2="116.84" width="0.254" layer="95" style="longdash"/>
 <wire x1="109.22" y1="116.84" x2="149.86" y2="116.84" width="0.254" layer="95" style="longdash"/>
 <wire x1="149.86" y1="116.84" x2="256.54" y2="116.84" width="0.254" layer="95" style="longdash"/>
-<wire x1="160.02" y1="22.86" x2="149.86" y2="22.86" width="0.254" layer="95" style="longdash"/>
-<wire x1="149.86" y1="22.86" x2="149.86" y2="43.18" width="0.254" layer="95" style="longdash"/>
+<wire x1="160.02" y1="25.4" x2="149.86" y2="25.4" width="0.254" layer="95" style="longdash"/>
+<wire x1="149.86" y1="25.4" x2="149.86" y2="43.18" width="0.254" layer="95" style="longdash"/>
 <wire x1="149.86" y1="43.18" x2="149.86" y2="83.82" width="0.254" layer="95" style="longdash"/>
 <wire x1="149.86" y1="83.82" x2="149.86" y2="116.84" width="0.254" layer="95" style="longdash"/>
-<wire x1="5.08" y1="43.18" x2="88.9" y2="43.18" width="0.254" layer="95" style="longdash"/>
-<wire x1="88.9" y1="43.18" x2="88.9" y2="5.08" width="0.254" layer="95" style="longdash"/>
-<wire x1="50.8" y1="101.6" x2="50.8" y2="5.08" width="0.254" layer="95" style="longdash"/>
+<wire x1="5.08" y1="43.18" x2="50.8" y2="43.18" width="0.254" layer="95" style="longdash"/>
+<wire x1="50.8" y1="43.18" x2="50.8" y2="5.08" width="0.254" layer="95" style="longdash"/>
 <text x="10.16" y="167.64" size="2.54" layer="95">Microcontroller</text>
 <text x="93.98" y="167.64" size="2.54" layer="95">3.3V Power supply</text>
-<wire x1="88.9" y1="43.18" x2="149.86" y2="43.18" width="0.254" layer="95" style="longdash"/>
+<wire x1="50.8" y1="43.18" x2="149.86" y2="43.18" width="0.254" layer="95" style="longdash"/>
 <text x="7.62" y="96.52" size="2.54" layer="95">Flash &amp; Reset</text>
 <text x="55.88" y="96.52" size="2.54" layer="95">Inputs</text>
 <text x="154.94" y="109.22" size="2.54" layer="95">Outputs</text>
-<text x="7.62" y="35.56" size="2.54" layer="95">Mounting holes</text>
-<text x="55.88" y="35.56" size="2.54" layer="95">Serial port</text>
-<text x="93.98" y="35.56" size="2.54" layer="95">AC-DC power supply</text>
+<text x="99.06" y="-7.62" size="2.54" layer="95">Mounting holes</text>
+<text x="17.78" y="35.56" size="2.54" layer="95">Serial port</text>
+<text x="63.5" y="35.56" size="2.54" layer="95">AC-DC power supply</text>
 <text x="114.3" y="109.22" size="2.54" layer="95">I2C port</text>
 <wire x1="109.22" y1="116.84" x2="109.22" y2="83.82" width="0.254" layer="95" style="longdash"/>
 <wire x1="109.22" y1="83.82" x2="149.86" y2="83.82" width="0.254" layer="95" style="longdash"/>
 </plain>
 <instances>
-<instance part="H1" gate="G$1" x="22.86" y="25.4" smashed="yes" rot="R180">
-<attribute name="NAME" x="20.066" y="24.8158" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="H2" gate="G$1" x="22.86" y="17.78" smashed="yes" rot="R180">
-<attribute name="NAME" x="20.066" y="17.1958" size="1.778" layer="95" rot="R180"/>
-</instance>
-<instance part="H3" gate="G$1" x="33.02" y="25.4" smashed="yes">
-<attribute name="NAME" x="35.814" y="25.9842" size="1.778" layer="95"/>
-</instance>
-<instance part="H4" gate="G$1" x="33.02" y="17.78" smashed="yes">
-<attribute name="NAME" x="35.814" y="18.3642" size="1.778" layer="95"/>
-</instance>
-<instance part="GND20" gate="1" x="27.94" y="15.24" smashed="yes">
-<attribute name="VALUE" x="27.94" y="14.986" size="1.778" layer="96" align="top-center"/>
+<instance part="GND20" gate="1" x="152.4" y="10.16" smashed="yes">
+<attribute name="VALUE" x="152.4" y="9.906" size="1.778" layer="96" align="top-center"/>
 </instance>
 <instance part="U1" gate="G$1" x="43.18" y="137.16" smashed="yes">
 <attribute name="NAME" x="30.48" y="109.22" size="1.27" layer="95"/>
@@ -15021,9 +15750,9 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="SUPPLY7" gate="G$1" x="243.84" y="63.5" smashed="yes">
 <attribute name="VALUE" x="243.84" y="66.294" size="1.778" layer="96" align="bottom-center"/>
 </instance>
-<instance part="J3" gate="A" x="63.5" y="17.78" smashed="yes" rot="MR0">
-<attribute name="NAME" x="69.85" y="26.035" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="69.85" y="10.16" size="1.778" layer="96" rot="MR0"/>
+<instance part="J3" gate="A" x="25.4" y="17.78" smashed="yes" rot="MR0">
+<attribute name="NAME" x="31.75" y="26.035" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="31.75" y="10.16" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="C1" gate="G$1" x="226.06" y="139.7" smashed="yes">
 <attribute name="NAME" x="227.076" y="140.335" size="1.778" layer="95"/>
@@ -15226,26 +15955,26 @@ DIN A4, landscape with location and doc. field</description>
 <instance part="S6" gate="G$1" x="83.82" y="71.12" smashed="yes">
 <attribute name="NAME" x="81.28" y="73.66" size="1.778" layer="95"/>
 </instance>
-<instance part="PS1" gate="G$1" x="109.22" y="15.24" smashed="yes">
-<attribute name="NAME" x="113.03" y="20.32" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="120.65" y="20.32" size="1.778" layer="96" align="center-left"/>
+<instance part="PS1" gate="G$1" x="78.74" y="15.24" smashed="yes">
+<attribute name="NAME" x="82.55" y="20.32" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="90.17" y="20.32" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="PS2" gate="G$1" x="109.22" y="30.48" smashed="yes">
-<attribute name="NAME" x="113.03" y="22.86" size="1.778" layer="95" align="center-left"/>
-<attribute name="VALUE" x="120.65" y="22.86" size="1.778" layer="96" align="center-left"/>
+<instance part="PS2" gate="G$1" x="78.74" y="30.48" smashed="yes">
+<attribute name="NAME" x="82.55" y="22.86" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="90.17" y="22.86" size="1.778" layer="96" align="center-left"/>
 </instance>
-<instance part="X1" gate="-1" x="96.52" y="30.48" smashed="yes">
-<attribute name="NAME" x="95.25" y="31.369" size="1.778" layer="95" rot="R180"/>
+<instance part="X1" gate="-1" x="66.04" y="30.48" smashed="yes">
+<attribute name="NAME" x="64.77" y="31.369" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="X1" gate="-2" x="96.52" y="27.94" smashed="yes">
-<attribute name="VALUE" x="96.52" y="30.48" size="1.778" layer="96"/>
-<attribute name="NAME" x="95.25" y="28.829" size="1.778" layer="95" rot="R180"/>
+<instance part="X1" gate="-2" x="66.04" y="27.94" smashed="yes">
+<attribute name="VALUE" x="66.04" y="30.48" size="1.778" layer="96"/>
+<attribute name="NAME" x="64.77" y="28.829" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="GND1" gate="1" x="139.7" y="7.62" smashed="yes">
-<attribute name="VALUE" x="139.7" y="7.366" size="1.778" layer="96" align="top-center"/>
+<instance part="GND1" gate="1" x="109.22" y="7.62" smashed="yes">
+<attribute name="VALUE" x="109.22" y="7.366" size="1.778" layer="96" align="top-center"/>
 </instance>
-<instance part="SUPPLY1" gate="G$1" x="142.24" y="30.48" smashed="yes">
-<attribute name="VALUE" x="142.24" y="33.274" size="1.778" layer="96" align="bottom-center"/>
+<instance part="SUPPLY1" gate="G$1" x="111.76" y="30.48" smashed="yes">
+<attribute name="VALUE" x="111.76" y="33.274" size="1.778" layer="96" align="bottom-center"/>
 </instance>
 <instance part="J1" gate="A" x="119.38" y="93.98" smashed="yes" rot="MR0">
 <attribute name="NAME" x="125.73" y="102.235" size="1.778" layer="95" rot="MR0"/>
@@ -15262,18 +15991,18 @@ DIN A4, landscape with location and doc. field</description>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="H1" gate="G$1" pin="MOUNT"/>
-<wire x1="25.4" y1="25.4" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="25.4" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="H2" gate="G$1" pin="MOUNT"/>
-<wire x1="27.94" y1="17.78" x2="25.4" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="20.32" x2="152.4" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="20.32" x2="152.4" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="12.7" x2="149.86" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="1" pin="GND"/>
-<junction x="27.94" y="17.78"/>
-<pinref part="H3" gate="G$1" pin="MOUNT"/>
-<wire x1="30.48" y1="25.4" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
-<junction x="27.94" y="25.4"/>
-<pinref part="H4" gate="G$1" pin="MOUNT"/>
-<wire x1="30.48" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<junction x="152.4" y="12.7"/>
+<wire x1="154.94" y1="20.32" x2="152.4" y2="20.32" width="0.1524" layer="91"/>
+<junction x="152.4" y="20.32"/>
+<wire x1="154.94" y1="12.7" x2="152.4" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="FRAME1" gate="G$1" pin="MOUNT"/>
+<pinref part="FRAME1" gate="G$1" pin="MOUNT1"/>
+<pinref part="FRAME1" gate="G$1" pin="MOUNT2"/>
+<pinref part="FRAME1" gate="G$1" pin="MOUNT3"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="GND@1"/>
@@ -15333,8 +16062,8 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="J3" gate="A" pin="2"/>
-<wire x1="76.2" y1="20.32" x2="66.04" y2="20.32" width="0.1524" layer="91"/>
-<label x="76.2" y="20.32" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="20.32" x2="27.94" y2="20.32" width="0.1524" layer="91"/>
+<label x="38.1" y="20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
@@ -15431,12 +16160,12 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="PS2" gate="G$1" pin="-VO"/>
-<wire x1="137.16" y1="30.48" x2="139.7" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="139.7" y1="30.48" x2="139.7" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="30.48" x2="109.22" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="30.48" x2="109.22" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="PS1" gate="G$1" pin="-VO"/>
-<wire x1="139.7" y1="15.24" x2="139.7" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="15.24" x2="139.7" y2="15.24" width="0.1524" layer="91"/>
-<junction x="139.7" y="15.24"/>
+<wire x1="109.22" y1="15.24" x2="109.22" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="15.24" x2="109.22" y2="15.24" width="0.1524" layer="91"/>
+<junction x="109.22" y="15.24"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -15517,8 +16246,8 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="J3" gate="A" pin="1"/>
-<wire x1="66.04" y1="22.86" x2="76.2" y2="22.86" width="0.1524" layer="91"/>
-<label x="76.2" y="22.86" size="1.27" layer="95" xref="yes"/>
+<wire x1="27.94" y1="22.86" x2="38.1" y2="22.86" width="0.1524" layer="91"/>
+<label x="38.1" y="22.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J1" gate="A" pin="1"/>
@@ -15771,8 +16500,8 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="J3" gate="A" pin="4"/>
-<wire x1="76.2" y1="15.24" x2="66.04" y2="15.24" width="0.1524" layer="91"/>
-<label x="76.2" y="15.24" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="15.24" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
+<label x="38.1" y="15.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TX" class="0">
@@ -15783,8 +16512,8 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="J3" gate="A" pin="3"/>
-<wire x1="76.2" y1="17.78" x2="66.04" y2="17.78" width="0.1524" layer="91"/>
-<label x="76.2" y="17.78" size="1.27" layer="95" xref="yes"/>
+<wire x1="38.1" y1="17.78" x2="27.94" y2="17.78" width="0.1524" layer="91"/>
+<label x="38.1" y="17.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CH_1" class="0">
@@ -15879,12 +16608,12 @@ DIN A4, landscape with location and doc. field</description>
 </segment>
 <segment>
 <pinref part="PS1" gate="G$1" pin="+VO"/>
-<wire x1="137.16" y1="12.7" x2="142.24" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="12.7" x2="142.24" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="12.7" x2="111.76" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="12.7" x2="111.76" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="PS2" gate="G$1" pin="+VO"/>
-<wire x1="142.24" y1="27.94" x2="142.24" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="27.94" x2="142.24" y2="27.94" width="0.1524" layer="91"/>
-<junction x="142.24" y="27.94"/>
+<wire x1="111.76" y1="27.94" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="27.94" x2="111.76" y2="27.94" width="0.1524" layer="91"/>
+<junction x="111.76" y="27.94"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
 </segment>
 </net>
@@ -16098,24 +16827,24 @@ DIN A4, landscape with location and doc. field</description>
 <segment>
 <pinref part="X1" gate="-1" pin="KL"/>
 <pinref part="PS2" gate="G$1" pin="AC_1"/>
-<wire x1="101.6" y1="30.48" x2="106.68" y2="30.48" width="0.1524" layer="91" style="longdash"/>
+<wire x1="71.12" y1="30.48" x2="76.2" y2="30.48" width="0.1524" layer="91" style="longdash"/>
 <pinref part="PS1" gate="G$1" pin="AC_1"/>
-<wire x1="106.68" y1="30.48" x2="109.22" y2="30.48" width="0.1524" layer="91" style="longdash"/>
-<wire x1="106.68" y1="30.48" x2="106.68" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="15.24" x2="109.22" y2="15.24" width="0.1524" layer="91"/>
-<junction x="106.68" y="30.48"/>
+<wire x1="76.2" y1="30.48" x2="78.74" y2="30.48" width="0.1524" layer="91" style="longdash"/>
+<wire x1="76.2" y1="30.48" x2="76.2" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="15.24" x2="78.74" y2="15.24" width="0.1524" layer="91"/>
+<junction x="76.2" y="30.48"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="PS2" gate="G$1" pin="AC_2"/>
 <pinref part="X1" gate="-2" pin="KL"/>
-<wire x1="109.22" y1="27.94" x2="104.14" y2="27.94" width="0.1524" layer="91" style="longdash"/>
+<wire x1="78.74" y1="27.94" x2="73.66" y2="27.94" width="0.1524" layer="91" style="longdash"/>
 <pinref part="PS1" gate="G$1" pin="AC_2"/>
-<wire x1="104.14" y1="27.94" x2="101.6" y2="27.94" width="0.1524" layer="91" style="longdash"/>
-<wire x1="104.14" y1="27.94" x2="104.14" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="12.7" x2="109.22" y2="12.7" width="0.1524" layer="91"/>
-<junction x="104.14" y="27.94"/>
+<wire x1="73.66" y1="27.94" x2="71.12" y2="27.94" width="0.1524" layer="91" style="longdash"/>
+<wire x1="73.66" y1="27.94" x2="73.66" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="12.7" x2="78.74" y2="12.7" width="0.1524" layer="91"/>
+<junction x="73.66" y="27.94"/>
 </segment>
 </net>
 <net name="SDA" class="0">
